@@ -18,7 +18,7 @@ Built using **Next.js 15** with the **App Router** and **TypeScript**, the proje
 
 ![Jeel Work Landing Preview](public/images/landingPagePreview.png)
 
-
+<br><br>
 
 
 ## 🚀 Getting Started
@@ -50,7 +50,7 @@ npm run dev
 
 Visit http://localhost:3000 in your browser.
 
-
+<br><br>
 
 
 ## 🧱 Project Structure
@@ -69,7 +69,7 @@ This project uses **Next.js App Router** with the following structure:
 │   └── styles/              # Global and modular CSS
 ```
 
-
+<br><br>
 
 
 ## ✨ Features
