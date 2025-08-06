@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
       </ul>
       <p>
         En utilisant notre application ou notre site, vous acceptez cette
-        politique. Dernière mise à jour : août 2025.
+        politique. <br /> <br /> Dernière mise à jour : août 2025.
       </p>
     </main>
     <Footer />

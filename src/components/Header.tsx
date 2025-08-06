@@ -3,9 +3,12 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -32,13 +35,22 @@ export default function Header() {
     setIsMobileMenuOpen(false)
   }
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault()
-    const target = document.querySelector(href)
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (pathname === '/') {
+      e.preventDefault()
+      const target = document.querySelector(href)
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+      closeMobileMenu()
+    } else {
+      // Ne bloque pas la redirection vers /
+      closeMobileMenu()
+      router.push(href)
     }
-    closeMobileMenu()
   }
 
   return (
@@ -86,7 +98,7 @@ export default function Header() {
           <li><a href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Télécharger</a></li>
         </ul>
       </div>
-      
+
       {isMobileMenuOpen && <div className="menu-overlay active" onClick={closeMobileMenu} />}
     </header>
   )

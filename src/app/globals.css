@@ -10,6 +10,11 @@
   --card-text-color: #1f2937;
 }
 
+/* Fix anchor scroll offset caused by fixed header */
+section[id] {
+  scroll-margin-top: 5rem; /* Ajuste selon la hauteur réelle de ton header */
+}
+
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
