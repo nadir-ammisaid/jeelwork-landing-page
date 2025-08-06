@@ -58,16 +58,45 @@ Visit http://localhost:3000 in your browser.
 This project uses **Next.js App Router** with the following structure:
 
 ```
-├── public/                  # Static files (images, favicons, etc.)
+JEELWORK-LANDING-PAGE
+├── .next/
+├── node_modules/
+├── public/
+│   ├── images/
+│   │   └── NextImages/
+│   ├── manifest.json
+│   ├── robots.txt
+│   └── sitemap.xml
 ├── src/
-│   ├── app/                 # App Router pages
-│   │   ├── page.tsx         # Main landing page
-│   │   ├── layout.tsx       # Shared layout with Header/Footer
-│   │   ├── privacy-policy/  # Privacy Policy page
-│   │   └── terms-of-use/    # Terms of Use page
-│   ├── components/          # Reusable UI components (Header, Footer, Sections)
-│   └── styles/              # Global and modular CSS
+│   ├── app/
+│   │   ├── privacy-policy/
+│   │   │   ├── page.tsx
+│   │   │   └── privacy-policy.css
+│   │   ├── terms-of-use/
+│   │   │   └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── page.module.css
+│   │   └── page.tsx
+│   └── components/
+│       ├── CTASection.tsx
+│       ├── DownloadSection.tsx
+│       ├── Footer.tsx
+│       ├── Header.tsx
+│       ├── HeroSection.tsx
+│       ├── HowItWorksSection.tsx
+│       ├── ServicesSection.tsx
+│       └── TestimonialsSection.tsx
+├── .gitignore
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.json
 ```
+
 
 <br><br>
 
