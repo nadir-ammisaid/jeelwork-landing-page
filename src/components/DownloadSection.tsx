@@ -6,7 +6,7 @@ export default function DownloadSection() {
     <section id="download" className="app-download" aria-label="Téléchargement de l'application">
       <div className="app-content">
         <div className="container">
-          <h2>Téléchargez Jeel Work Algérie</h2>
+          <h2>Téléchargez Jeelwork Algérie</h2>
           <p>
             Accédez à tous nos services partout en Algérie depuis votre
             smartphone

@@ -1,7 +1,7 @@
 {
-  "name": "Jeel Work Algérie",
-  "short_name": "Jeel Work",
-  "description": "Trouvez des artisans de confiance partout en Algérie",
+  "name": "Jeelwork Algérie",
+  "short_name": "Jeelwork",
+  "description": "Trouvez des jobbers de confiance partout en Algérie",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f8f9fa",

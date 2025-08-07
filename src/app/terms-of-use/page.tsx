@@ -3,8 +3,8 @@ import Footer from '../../components/Footer';
 import './terms-of-use.css';
 
 export const metadata = {
-  title: "Conditions d'utilisation - Jeel Work Algérie",
-  description: "Conditions générales d'utilisation de la plateforme Jeel Work"
+  title: "Conditions d'utilisation - Jeelwork Algérie",
+  description: "Conditions générales d'utilisation de la plateforme Jeelwork"
 };
 
 export default function TermsOfUsePage() {
@@ -14,9 +14,9 @@ export default function TermsOfUsePage() {
       <main className="terms-container">
         <h1>Conditions d'utilisation</h1>
         <p>
-          En utilisant la plateforme Jeel Work, vous acceptez les présentes
+          En utilisant la plateforme Jeelwork, vous acceptez les présentes
           conditions d'utilisation. La plateforme met en relation des clients et
-          des artisans pour la réalisation de prestations de service.
+          des jobbers pour la réalisation de prestations de service.
         </p>
         <ul>
           <li>
@@ -25,7 +25,7 @@ export default function TermsOfUsePage() {
           </li>
           <li>
             Les prestations sont convenues directement entre le client et
-            l'artisan. Jeel Work n'intervient pas dans la réalisation ni le
+            le jobber. Jeelwork n'intervient pas dans la réalisation ni le
             paiement.
           </li>
           <li>
@@ -37,7 +37,7 @@ export default function TermsOfUsePage() {
           </li>
         </ul>
         <p>
-          Jeel Work se réserve le droit de modifier ces conditions à tout moment.
+          Jeelwork se réserve le droit de modifier ces conditions à tout moment.
           <br /><br />
           Dernière mise à jour : août 2025.
         </p>

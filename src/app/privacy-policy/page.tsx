@@ -3,7 +3,7 @@ import Footer from '../../components/Footer';
 import './privacy-policy.css';
 
 export const metadata = {
-  title: 'Politique de confidentialité - Jeel Work Algérie',
+  title: 'Politique de confidentialité - Jeelwork Algérie',
   description: 'Politique de confidentialité et protection des données',
 };
 
@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
     <main className="privacy-container">
       <h1>Politique de confidentialité</h1>
       <p>
-        Chez Jeel Work, nous accordons une grande importance à la protection de
+        Chez Jeelwork, nous accordons une grande importance à la protection de
         vos données personnelles. Cette politique explique comment nous
         collectons, utilisons et protégeons vos informations.
       </p>

@@ -37,8 +37,8 @@ export default function Footer() {
               <path fill="#D21034" fillRule="nonzero" d="M351.787 196.335c-19.747-34.233-56.313-55.338-95.848-55.338-61.115 0-110.676 49.561-110.676 110.676 0 61.113 49.561 110.677 110.676 110.677 39.535 0 76.086-21.094 95.854-55.333a88.607 88.607 0 01-69.122 33.197c-48.893 0-88.541-39.65-88.541-88.541 0-48.893 39.648-88.541 88.541-88.541a88.558 88.558 0 0169.116 33.206v-.003zm4.259 55.338l-100.107-32.526 61.871 85.154V199.042L255.939 284.2l100.107-32.527z"/>
             </svg>
           </div>
-          <p>Jeel Work : pour une nouvelle génération de services en Algérie.</p>
-          <p>&copy; {currentYear} Jeel Work Algérie. Tous droits réservés.</p>
+          <p>Jeelwork : pour une nouvelle génération de services en Algérie.</p>
+          <p>&copy; {currentYear} Jeelwork Algérie. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
