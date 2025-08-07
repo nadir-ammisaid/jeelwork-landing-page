@@ -10,38 +10,70 @@ export const metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <>
-    <Header />
-    <main className="privacy-container">
-      <h1>Politique de confidentialité</h1>
-      <p>
-        Chez Jeelwork, nous accordons une grande importance à la protection de
-        vos données personnelles. Cette politique explique comment nous
-        collectons, utilisons et protégeons vos informations.
-      </p>
-      <ul>
-        <li>
-          Les données collectées (nom, téléphone, e-mail, localisation) sont
-          utilisées uniquement pour faciliter les mises en relation.
-        </li>
-        <li>
-          Nous ne partageons jamais vos informations avec des tiers sans votre
-          consentement explicite.
-        </li>
-        <li>
-          Vos données sont stockées de manière sécurisée et sont accessibles
-          uniquement par les membres autorisés de notre équipe.
-        </li>
-        <li>
-          Vous pouvez demander la modification ou la suppression de vos données
-          à tout moment en nous contactant.
-        </li>
-      </ul>
-      <p>
-        En utilisant notre application ou notre site, vous acceptez cette
-        politique. <br /> <br /> Dernière mise à jour : août 2025.
-      </p>
-    </main>
-    <Footer />
+      <Header />
+      <main className="privacy-container">
+        <h1>Politique de confidentialité</h1>
+
+        <section>
+          <h2 className="privacy-title">1. Introduction</h2>
+          <p>
+            La présente politique de confidentialité décrit comment Jeelwork collecte, utilise et protège les données personnelles des utilisateurs de sa plateforme (site web et application mobile).
+          </p>
+        </section>
+
+        <section>
+          <h2 className="privacy-title">2. Données collectées</h2>
+          <ul>
+            <li>Nom, prénom, adresse email, numéro de téléphone</li>
+            <li>Localisation géographique pour faciliter les mises en relation</li>
+            <li>Historique des interactions avec la plateforme (demandes, offres, etc.)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="privacy-title">3. Utilisation des données</h2>
+          <ul>
+            <li>Faciliter la mise en relation entre clients et jobbers</li>
+            <li>Améliorer les services proposés et l'expérience utilisateur</li>
+            <li>Communiquer des informations importantes liées à votre activité</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="privacy-title">4. Partage des données</h2>
+          <p>
+            Nous ne partageons jamais vos informations personnelles avec des tiers sans votre consentement explicite, sauf si la loi l’exige.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="privacy-title">5. Sécurité</h2>
+          <p>
+            Vos données sont stockées de manière sécurisée, avec des mesures techniques et organisationnelles strictes. Seuls les membres autorisés de l'équipe Jeelwork y ont accès.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="privacy-title">6. Vos droits</h2>
+          <ul>
+            <li>Demander l'accès, la modification ou la suppression de vos données</li>
+            <li>Retirer votre consentement à tout moment</li>
+            <li>Exercer vos droits en nous contactant à l'adresse email officielle</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="privacy-title">7. Consentement</h2>
+          <p>
+            En utilisant la plateforme Jeelwork, vous acceptez la présente politique de confidentialité. Elle peut être modifiée à tout moment. Les utilisateurs seront notifiés en cas de changement important.
+          </p>
+        </section>
+
+        <section>
+          <p>Dernière mise à jour : juillet 2025.</p>
+        </section>
+      </main>
+      <Footer />
     </>
   );
 }

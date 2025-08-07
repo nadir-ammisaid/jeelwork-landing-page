@@ -31,3 +31,7 @@
 .privacy-container li {
   margin-bottom: 0.5rem;
 }
+
+.privacy-title {
+  text-align: left;
+}
