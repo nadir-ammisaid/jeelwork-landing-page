@@ -1,6 +1,6 @@
-# 🛠️ Jeel Work Landing Page
+# 🛠️ Jeelwork Landing Page
 
-Official landing page for **Jeel Work Algeria** – a platform that connects users with skilled local artisans and service providers across all 58 wilayas.
+Official landing page for **Jeelwork Algeria** – a platform that connects users with skilled local jobbers and service providers across all 58 wilayas.
 
 Built using **Next.js 15** with the **App Router** and **TypeScript**, the project is optimized for:
 - ⚡ SEO and performance (static export, responsive images, lazy loading)
@@ -8,7 +8,7 @@ Built using **Next.js 15** with the **App Router** and **TypeScript**, the proje
 - ♿ Accessibility best practices
 - 🌍 Multi-language readiness
 
-> This project serves as the front-facing gateway for the Jeel Work ecosystem.
+> This project serves as the front-facing gateway for the Jeelwork ecosystem.
 
 🔗 [https://jeelwork.com](https://jeelwork.com)
 
@@ -16,7 +16,7 @@ Built using **Next.js 15** with the **App Router** and **TypeScript**, the proje
 
 ## 🖼️ Preview
 
-![Jeel Work Landing Preview](public/images/landingPagePreview.png)
+![Jeelwork Landing Preview](public/images/landingPagePreview.png)
 
 <br><br>
 

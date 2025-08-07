@@ -57,16 +57,16 @@ export default function Header() {
     <header>
       <div className="container">
         <nav className="navbar" role="navigation" aria-label="Navigation principale">
-          <Link href="/" className="logo" aria-label="Jeel Work - Accueil">
+          <Link href="/" className="logo" aria-label="Jeelwork - Accueil">
             <Image
               src="/images/jeelWorkLogo.webp"
-              alt="Logo Jeel Work"
+              alt="Logo Jeelwork"
               width={30}
               height={30}
               className="logo-img"
               priority
             />
-            <span>Jeel Work</span>
+            <span>Jeelwork</span>
           </Link>
 
           <ul className="nav-links">

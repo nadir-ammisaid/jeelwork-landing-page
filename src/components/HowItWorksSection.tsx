@@ -7,17 +7,17 @@ const steps = [
   {
     number: 2,
     title: 'Recevez des offres',
-    description: 'Comparez les propositions d\'artisans près de chez vous et choisissez celui qui vous convient'
+    description: 'Comparez les propositions des  près de chez vous et choisissez celui qui vous convient'
   },
   {
     number: 3,
     title: 'Service réalisé',
-    description: 'L\'artisan effectue la prestation, le paiement se fait directement entre vous'
+    description: 'Le jobber effectue la prestation, le paiement se fait directement entre vous'
   },
   {
     number: 4,
     title: 'Laissez un avis',
-    description: 'Évaluez la prestation de l\'artisan pour aider la communauté à faire le bon choix'
+    description: 'Évaluez la prestation du jobber pour aider la communauté à faire le bon choix'
   }
 ]
 
