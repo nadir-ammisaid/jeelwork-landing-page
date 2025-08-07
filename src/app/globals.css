@@ -43,11 +43,6 @@ a:hover {
   color: #4f46e5;
 }
 
-/* h1,
-h2,
-h3 {
-  margin: 0 0 1rem 0;
-} */
 
 h2 {
   text-align: center;
@@ -110,34 +105,35 @@ header {
 .logo {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #6366f1;
+  /* color: #6366f1; */
+  color: #5359a7;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.logo svg {
+/* .logo svg {
   width: 1.875rem;
   height: 1.875rem;
-}
+} */
 
 .logo img {
-  width: 1.65rem;
-  height: 1.65rem;
+  width: 1.9rem;
+  height: 1.9rem;
   background: white;
   border-radius: 50%;
   /* padding: 0.25rem; */
   box-shadow: 0 0 0 1px #fff;
 }
 
-.logo-img {
+/* .logo-img {
   width: 1.875rem;
   height: 1.875rem;
-}
+} */
 
 .logo-footer {
-  font-size: 1.5rem;
-  color: #6366f1;
+  /* font-size: 1.5rem;
+  color: #6366f1; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,9 +169,10 @@ header {
 }
 
 .burger-line {
-  width: 1.5625rem;
-  height: 0.1875rem;
-  background-color: #6366f1;
+  width: 2rem;
+  height: 0.2rem;
+  /* background-color: #6366f1; */
+  background-color: #5359a7;
   margin: 0.1875rem 0;
   transition: 0.3s;
   border-radius: 0.1875rem;
