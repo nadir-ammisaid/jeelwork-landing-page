@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'Jeelwork' }],
   creator: 'Jeelwork',
   publisher: 'Jeelwork',
+  icons: {
+  icon: '/favicon.ico',
+  apple: '/apple-touch-icon.png',
+},
+
   formatDetection: {
     email: false,
     address: false,
@@ -80,8 +85,6 @@ export default function RootLayout({
   return (
     <html lang="fr" dir="ltr">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={inter.className}>
