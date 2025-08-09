@@ -7,7 +7,7 @@ const steps = [
   {
     number: 2,
     title: 'Recevez des offres',
-    description: 'Comparez les propositions des  près de chez vous et choisissez celui qui vous convient'
+    description: 'Comparez les propositions des jobbers près de chez vous et choisissez celui qui vous convient'
   },
   {
     number: 3,
