@@ -5,8 +5,8 @@ export default function HeroSection() {
     <section className="hero" aria-label="Section principale">
       <div className="container">
         <div className="hero-content">
-          <h1>Des jobbers de confiance, partout en Algérie</h1>
-          <p>Réservez un professionnel près de chez vous, en quelques clics.</p>
+          <h1>Des jobbers de confiance <br /> partout en Algérie</h1>
+          <p>Plombier, électricien ou peintre : réservez votre jobber en quelques clics dans les 58 wilayas.</p>
           <Link href="#download" className="btn" aria-label="Essayer gratuitement l'application">
             Essayer gratuitement
           </Link>

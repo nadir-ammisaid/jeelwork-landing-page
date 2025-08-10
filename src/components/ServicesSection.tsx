@@ -2,54 +2,55 @@ const services = [
   {
     icon: '/icons/valve.svg',
     title: 'Plomberie',
-    description: 'Réparation de fuites et chasses d\'eau, Installation de chauffe-eaux, robinets, éviers et lavabos, Débouchage de canalisations…',
+    description: 'Trouvez un jobber plombier pour la réparation de fuites et chasses d\'eau, installation de chauffe-eaux, robinets, éviers et lavabos, débouchage de canalisations - service disponible dans toutes les 58 wilayas.',
   },
   {
     icon: '/icons/ac_unit.svg',
     title: 'Froid et climatisation',
-    description: 'Installation, entretien et réparation de climatiseurs, systèmes de ventilation, groupes frigorifiques et pompes à chaleur…',
+    description: 'Faites appel à un jobber frigoriste ou climaticien pour l\'installation, l\'entretien et la réparation de climatiseurs, systèmes de ventilation, groupes frigorifiques et pompes à chaleur - intervention rapide partout en Algérie.',
   },
   {
     icon: '/icons/electric_bolt.svg',
     title: 'Électricité',
-    description: 'Dépannage de pannes électriques, Installation de prises, interrupteurs et de tableaux électriques, Pose de compteurs…',
+    description: 'Besoin d’un jobber électricien ? Dépannage de pannes électriques, installation de prises, interrupteurs et tableaux électriques, pose de compteurs - artisans qualifiés dans les 58 wilayas.',
   },
   {
     icon: '/icons/local_laundry_service.svg',
     title: 'Électroménager',
-    description: 'Réparation et installation de réfrigérateurs, lave-linge, fours, micro-ondes, lave-vaisselle, aspirateurs et autres appareils électroménagers domestiques…',
+    description: 'Trouvez un jobber électroménager pour la réparation et l\'installation de réfrigérateurs, lave-linge, fours, micro-ondes, lave-vaisselle, aspirateurs et autres appareils domestiques - intervention à domicile dans votre wilaya.',
   },
   {
     icon: '/icons/format_paint.svg',
     title: 'Peinture',
-    description: 'Peinture intérieure/extérieure, Application d\'enduits et sous-couches, Réparation de fissures et préparation de surfaces…',
+    description: 'Contactez un jobber peintre pour vos travaux de peinture intérieure et extérieure, application d\'enduits et sous-couches, réparation de fissures et préparation de surfaces - chantiers soignés partout en Algérie.',
   },
   {
     icon: '/icons/roofing.svg',
     title: 'Placo/Plâtre',
-    description: 'Faux plafonds et éclairage LED intégré, Moulures et corniches en plâtre, Cloisons et habillages décoratifs en placo…',
+    description: 'Faites intervenir un jobber plaquiste ou plâtrier pour la pose de faux plafonds avec éclairage LED intégré, moulures et corniches en plâtre, cloisons et habillages décoratifs en placo - finitions précises et esthétiques.',
   },
   {
     icon: '/icons/brick.svg',
     title: 'Maçonnerie',
-    description: 'Construction de murs, Réparation de fissures, Pose de carreaux, faïence et dallage, Réalisation de chapes, Travaux en béton…',
+    description: 'Sollicitez un jobber maçon pour la construction de murs, réparation de fissures, pose de carreaux, faïence et dallage, réalisation de chapes, travaux en béton - professionnels expérimentés disponibles rapidement.',
   },
   {
     icon: '/icons/nature.svg',
     title: 'Jardinage',
-    description: 'Taille de palmiers et entretien d\'espaces extérieurs, Arrosage d\'arbres et irrigation, Aménagement de jardins traditionnels…',
+    description: 'Engagez un jobber jardinier pour la taille de palmiers et l\'entretien d\'espaces verts, arrosage et irrigation, aménagement de jardins traditionnels - services disponibles du Nord au Sud de l’Algérie.',
   },
   {
     icon: '/icons/local_shipping.svg',
     title: 'Transport',
-    description: 'Déménagements et transport de meubles, Livraison d\'objets volumineux, Chargement/déchargement d\'équipements lourds…',
+    description: 'Réservez un jobber transporteur pour vos déménagements, le transport de meubles, la livraison d\'objets volumineux, le chargement et déchargement d\'équipements lourds - réseau actif dans les 58 wilayas.',
   },
   {
     icon: '/icons/construction.svg',
     title: 'Autres',
-    description: 'Montage de meubles et étagères, Réparation de portes et poignées, Installation de tringles, Petits travaux, Rebouchage de trous…',
+    description: 'Trouvez un jobber polyvalent pour le montage de meubles et étagères, réparation de portes et poignées, installation de tringles, petits travaux, rebouchage de trous - service rapide près de chez vous.',
   }
 ];
+
 
 
 export default function ServicesSection() {

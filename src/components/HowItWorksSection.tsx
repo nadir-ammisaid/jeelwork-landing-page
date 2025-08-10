@@ -7,12 +7,12 @@ const steps = [
   {
     number: 2,
     title: 'Recevez des offres',
-    description: 'Comparez les propositions des jobbers près de chez vous et choisissez celui qui vous convient'
+    description: 'Comparez les propositions (devis) des jobbers près de chez vous et choisissez celui qui vous convient'
   },
   {
     number: 3,
     title: 'Service réalisé',
-    description: 'Le jobber effectue la prestation, le paiement se fait directement entre vous'
+    description: 'Réservation rapide, prestation effectuée, paiement direct avec le jobber. Vous pouvez suivre l’avancement en temps réel'
   },
   {
     number: 4,
