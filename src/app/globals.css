@@ -388,7 +388,7 @@ header {
 .service-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-  display: block;
+  /* display: block; */
 }
 
 .service-card h3 {
