@@ -12,7 +12,7 @@
 
 /* Fix anchor scroll offset caused by fixed header */
 section[id] {
-  scroll-margin-top: 5rem; /* Ajuste selon la hauteur réelle de ton header */
+  scroll-margin-top: 5rem;
 }
 
 
@@ -112,28 +112,15 @@ header {
   gap: 0.5rem;
 }
 
-/* .logo svg {
-  width: 1.875rem;
-  height: 1.875rem;
-} */
-
 .logo img {
   width: 1.9rem;
   height: 1.9rem;
   background: white;
   border-radius: 50%;
-  /* padding: 0.25rem; */
   box-shadow: 0 0 0 1px #fff;
 }
 
-/* .logo-img {
-  width: 1.875rem;
-  height: 1.875rem;
-} */
-
 .logo-footer {
-  /* font-size: 1.5rem;
-  color: #6366f1; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,30 +250,6 @@ header {
     rgba(0, 0, 0, 0.8);
 }
 
-/* Hero Section */
-
-/* simple background */
-
-/* .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  text-align: center;
-  padding: 5rem 0;
-  position: relative;
-  overflow: hidden;
-} */
-
-/* .hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  opacity: 0.1;
-} */
-
 /* background image */
 
 .hero {
@@ -302,7 +265,7 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* voile noir semi-transparent */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -328,12 +291,6 @@ header {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-
-/* .hero-emoji {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-} */
 
 /* Services Section */
 .services {
@@ -385,12 +342,6 @@ header {
   box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.15);
 }
 
-.service-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  /* display: block; */
-}
-
 .service-card h3 {
   font-size: 1.3rem;
   /* color: #1f2937; */
@@ -411,11 +362,6 @@ header {
   padding: 2rem 0;
 }
 
-/* Carrousel caché par défaut sur desktop pour les étapes */
-/* .steps-carousel {
-  display: none;
-} */
-
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
@@ -425,7 +371,7 @@ header {
 
 .step {
   background: white;
-  padding: 2rem;
+  padding: 2rem 1.8rem;
   border-radius: 1rem;
   text-align: center;
   box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.08);
@@ -538,13 +484,6 @@ header {
   background: #ffffff;
   color: #000000;
 }
-
-/* .web-btn img {
-  width: 1.5rem;
-  height: 1.5rem;
-  vertical-align: middle;
-  color: #6366f1;
-} */
 
 .download-btn:hover {
   transform: translateY(-0.1875rem);
@@ -699,42 +638,12 @@ header {
   }
 
   .services-carousel .service-card {
-    flex: 0 0 75vw; /* Largeur de 75% de la viewport */
-    scroll-snap-align: start;
-    min-width: 75vw;
-    max-width: 75vw;
-    margin: 0; /* Supprime les marges par défaut */
-  }
-
-  /* How It Works Mobile - Cache la grid sur mobile */
-  /* .steps-grid {
-    display: none;
-  } */
-
-  /* Affiche le carrousel sur mobile pour les étapes */
-  /* .steps-carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 1rem;
-    padding: 2rem 1rem;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  } */
-
-  /* Chrome, Safari et Opera */
-  /* .steps-carousel::-webkit-scrollbar {
-    display: none;
-  } */
-
-  /* .steps-carousel .step {
     flex: 0 0 75vw;
     scroll-snap-align: start;
     min-width: 75vw;
     max-width: 75vw;
     margin: 0;
-  } */
+  }
 
   /* Testimonials Mobile - Cache la grid sur mobile */
   .testimonials-grid {
@@ -759,11 +668,11 @@ header {
   }
 
   .testimonials-carousel .testimonial-card {
-    flex: 0 0 75vw; /* Largeur de 75% de la viewport */
+    flex: 0 0 75vw;
     scroll-snap-align: start;
     min-width: 75vw;
     max-width: 75vw;
-    margin: 0; /* Supprime les marges par défaut */
+    margin: 0;
   }
 
   .carousel-dots {
@@ -780,23 +689,7 @@ header {
     font-style: italic;
   }
 
-  /* pour afficher les cartes how to 2 par ligne au format mobile*/
-
-  /* .steps-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-
-  .step {
-    flex: 0 1 calc(50% - 0.5rem);
-    min-width: calc(50% - 0.5rem);
-    max-width: calc(50% - 0.5rem);
-    padding: 1.5rem;
-  } */
-
-  /* pour afficher les cartes how to 1 par ligne au format mobile*/
+  /* les cartes "how to" au format mobile*/
   .steps-grid {
     display: flex;
     flex-direction: column;
@@ -819,16 +712,11 @@ header {
   }
 
   .services-carousel .service-card {
-    flex: 0 0 70vw; /* 70% de la largeur pour laisser voir 30% */
+    flex: 0 0 70vw;
     min-width: 70vw;
     max-width: 70vw;
     padding: 1.5rem;
   }
-
-  /* Steps pour écrans en dessous de 550px */
-  /* .steps-carousel {
-    gap: 1.5rem;
-  } */
 
   .steps-carousel .step {
     flex: 0 0 70vw;
@@ -880,22 +768,6 @@ header {
   .service-card p {
     font-size: 0.9rem;
   }
-
-  /* Steps pour très petits écrans */
-  /* .steps-carousel .step {
-    flex: 0 0 75vw;
-    min-width: 75vw;
-    max-width: 75vw;
-    padding: 1.5rem;
-  } */
-
-  /* Testimonials pour très petits écrans */
-  /* .testimonials-carousel .testimonial-card {
-    flex: 0 0 75vw;
-    min-width: 75vw;
-    max-width: 75vw;
-    padding: 1.5rem;
-  } */
 }
 
 /* CTA Section */
@@ -961,9 +833,8 @@ header {
   }
 }
 
-/* ============================ */
+
 /* SEO & Performance Optimizations */
-/* ============================ */
 
 /* Optimisation des polices */
 @font-face {
@@ -980,64 +851,3 @@ header {
     transition-duration: 0.01ms !important;
   }
 }
-
-/* Mode sombre */
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #1a1a1a;
-    --text-color: #e0e0e0;
-    --card-bg-color: #2c2c2c;
-    --card-text-color: #f3f3f3;
-  }
-
-  html {
-    color-scheme: dark;
-  }
-} */
-
-
-
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
-
-

@@ -2,32 +2,32 @@ const services = [
   {
     icon: '/icons/valve.svg',
     title: 'Plomberie',
-    description: 'Trouvez un jobber plombier pour la réparation de fuites et chasses d\'eau, installation de chauffe-eaux, robinets, éviers et lavabos, débouchage de canalisations - service disponible dans toutes les 58 wilayas.',
+    description: 'Trouvez un jobber plombier pour la réparation de fuites et chasses d\'eau, installation de chauffe-eaux, robinets, éviers et lavabos, débouchage de canalisations - service disponible dans toutes les régions',
   },
   {
     icon: '/icons/ac_unit.svg',
     title: 'Froid et climatisation',
-    description: 'Faites appel à un jobber frigoriste ou climaticien pour l\'installation, l\'entretien et la réparation de climatiseurs, systèmes de ventilation, groupes frigorifiques et pompes à chaleur - intervention rapide partout en Algérie.',
+    description: 'Faites appel à un jobber frigoriste ou climaticien pour l\'installation, l\'entretien et la réparation de climatiseurs, systèmes de ventilation, groupes frigorifiques et pompes à chaleur - intervention rapide sur tout le territoire algérien.',
   },
   {
     icon: '/icons/electric_bolt.svg',
     title: 'Électricité',
-    description: 'Besoin d’un jobber électricien ? Dépannage de pannes électriques, installation de prises, interrupteurs et tableaux électriques, pose de compteurs - artisans qualifiés dans les 58 wilayas.',
+    description: 'Besoin d\'un jobber électricien ? Dépannage de pannes électriques, installation de prises, interrupteurs et tableaux électriques, pose de compteurs - artisans qualifiés dans chaque wilaya.',
   },
   {
     icon: '/icons/local_laundry_service.svg',
     title: 'Électroménager',
-    description: 'Trouvez un jobber électroménager pour la réparation et l\'installation de réfrigérateurs, lave-linge, fours, micro-ondes, lave-vaisselle, aspirateurs et autres appareils domestiques - intervention à domicile dans votre wilaya.',
+    description: 'Trouvez un jobber électroménager pour la réparation et l\'installation de réfrigérateurs, lave-linge, fours, lave-vaisselle, aspirateurs et autres appareils domestiques - service à domicile disponible à l\'échelle nationale.',
   },
   {
     icon: '/icons/format_paint.svg',
     title: 'Peinture',
-    description: 'Contactez un jobber peintre pour vos travaux de peinture intérieure et extérieure, application d\'enduits et sous-couches, réparation de fissures et préparation de surfaces - chantiers soignés partout en Algérie.',
+    description: 'Contactez un jobber peintre pour vos travaux de peinture intérieure et extérieure, application d\'enduits et sous-couches, réparation de fissures et préparation de surfaces - chantiers et finitions soignés partout dans le pays.',
   },
   {
     icon: '/icons/roofing.svg',
     title: 'Placo/Plâtre',
-    description: 'Faites intervenir un jobber plaquiste ou plâtrier pour la pose de faux plafonds avec éclairage LED intégré, moulures et corniches en plâtre, cloisons et habillages décoratifs en placo - finitions précises et esthétiques.',
+    description: 'Faites intervenir un jobber plaquiste ou plâtrier pour la pose de faux plafonds avec éclairage LED intégré, moulures et corniches en plâtre, cloisons et habillages décoratifs en placo - résultat esthétique et précis sur l\'ensemble du territoire',
   },
   {
     icon: '/icons/brick.svg',
@@ -37,7 +37,7 @@ const services = [
   {
     icon: '/icons/nature.svg',
     title: 'Jardinage',
-    description: 'Engagez un jobber jardinier pour la taille de palmiers et l\'entretien d\'espaces verts, arrosage et irrigation, aménagement de jardins traditionnels - services disponibles du Nord au Sud de l’Algérie.',
+    description: 'Engagez un jobber jardinier pour la taille de palmiers et l\'entretien d\'espaces verts, arrosage et irrigation, aménagement de jardins traditionnels - services proposés du Nord au Sud de l\'Algérie.',
   },
   {
     icon: '/icons/local_shipping.svg',
@@ -66,7 +66,7 @@ export default function ServicesSection() {
             marginBottom: '2rem',
           }}
         >
-          Des professionnels qualifiés dans les 58 wilayas
+          Des professionnels qualifiés et disponibles dans toutes les wilayas.
         </p>
 
         <div className="carousel-wrapper">
