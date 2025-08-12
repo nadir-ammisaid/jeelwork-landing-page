@@ -4,6 +4,7 @@
 }
 
 :root {
+  --header-h: 4.82rem;
   --bg-color: #f8f9fa;
   --text-color: #333;
   --card-bg-color: white;
@@ -247,29 +248,40 @@ header {
 
 .mobile-menu {
   position: fixed;
-  top: 0;
-  right: -18.75rem;
-  width: 18.75rem;
+  top: var(--header-h);
+  /* height: calc(100vh - var(--header-h)); */
   height: auto;
+  max-height: none;
+  padding-top: 0;
+  width: 17.75rem;
+  left: -17.75rem;
+  right: auto;
+  transition: left 0.3s ease;
+  box-shadow: 0.3125rem 0 1.25rem rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 1rem;
+  /* right: -18.75rem; */
   max-height: 100vh;
   background: #ffffff; /* fond blanc opaque */
   backdrop-filter: none; /* suppression effet glass */
   -webkit-backdrop-filter: none;
   border: 0.0625rem solid rgba(255, 255, 255, 0.2);
   z-index: 99;
-  transition: right 0.3s ease;
-  padding-top: 5rem;
-  box-shadow: -0.3125rem 0 1.25rem rgba(0, 0, 0, 0.1);
-  border-bottom-left-radius: 1rem;
+  padding-top: 0;
+  /* transition: right 0.3s ease; */
+  /* box-shadow: -0.3125rem 0 1.25rem rgba(0, 0, 0, 0.1); */
+  /* border-bottom-left-radius: 1rem; */
 }
 
 .mobile-menu.active {
-  right: 0;
+  /* right: 0; */
+  left: 0;
 }
 
 .menu-overlay {
   position: fixed;
-  top: 0;
+  top: var(--header-h);
+  height: calc(100vh - var(--header-h));
   left: 0;
   width: 100%;
   height: 100vh;
@@ -298,7 +310,8 @@ header {
 }
 
 .mobile-menu li:last-child {
-  border-bottom-left-radius: 1rem;
+  /* border-bottom-left-radius: 1rem; */
+  border-bottom-right-radius: 1rem;
   overflow: hidden;
 }
 
@@ -788,6 +801,19 @@ header {
 
 /* Mobile (max-width: 430px) */
 @media (max-width: 430px) {
+  
+  .navbar {
+    justify-content: space-between;
+  }
+  
+  .burger {
+    order: 1; /* burger à gauche */
+  }
+  
+  .logo {
+    order: 2; margin-left: auto; /* logo poussé à droite */
+  }
+
   .hero {
     background: url("/images/artisanat-mobile.avif") center / cover no-repeat;
   }
@@ -826,10 +852,10 @@ header {
     justify-content: center;
   }
 
-  /* Menu plus étroit sur très petits écrans */
   .mobile-menu {
     width: 17.5rem;
-    right: -17.5rem;
+    /* right: -17.5rem; */
+    left: -17.5rem;
   }
 
   /* Services Mobile - Cache la grid sur mobile */
@@ -951,6 +977,19 @@ header {
 
 /* Tablet (431px - 1024px) */
 @media (min-width: 430px) and (max-width: 1024px) {
+
+  .navbar {
+    justify-content: space-between;
+  }
+  
+  .burger {
+    order: 1; /* burger à gauche */
+  }
+  
+  .logo {
+    order: 2; margin-left: auto; /* logo poussé à droite */
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }
