@@ -8,8 +8,7 @@ export default function DownloadSection() {
         <div className="container">
           <h2>Téléchargez Jeelwork Algérie</h2>
           <p>
-            Accédez à tous nos services partout en Algérie depuis votre
-            smartphone
+            Accédez à tous nos services, où que vous soyez, depuis votre smartphone.
           </p>
           
           <div className="download-options">
@@ -51,7 +50,7 @@ export default function DownloadSection() {
           </div>
           
           <p className="app-info">
-            Gratuit et conçu pour fonctionner efficacement partout en Algérie
+            Gratuit et conçu pour fonctionner efficacement dans toutes les wilayas.
           </p>
         </div>
       </div>
