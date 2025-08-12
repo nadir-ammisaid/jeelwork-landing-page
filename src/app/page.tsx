@@ -6,7 +6,7 @@ import DownloadSection from '../components/DownloadSection'
 import TestimonialsSection from '../components/TestimonialsSection'
 import CTASection from '../components/CTASection'
 import Footer from '../components/Footer'
-import FAQSection from '@/components/FAQSection'
+import FAQSection from '../components/FAQSection'
 
 export default function Home() {
   return (
