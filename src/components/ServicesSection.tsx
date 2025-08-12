@@ -1,51 +1,51 @@
 const services = [
   {
-    icon: '/icons/valve.svg',
+    icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/plumbing.svg',
     title: 'Plomberie',
     description: 'Trouvez un jobber plombier pour la réparation de fuites et chasses d\'eau, installation de chauffe-eaux, robinets, éviers et lavabos, débouchage de canalisations - service disponible dans toutes les régions',
   },
   {
-    icon: '/icons/ac_unit.svg',
+    icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/cooling-and-air-conditioning.svg',
     title: 'Froid et climatisation',
     description: 'Faites appel à un jobber frigoriste ou climaticien pour l\'installation, l\'entretien et la réparation de climatiseurs, systèmes de ventilation, groupes frigorifiques et pompes à chaleur - intervention rapide sur tout le territoire algérien.',
   },
   {
-    icon: '/icons/electric_bolt.svg',
+    icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/electrical-work.svg',
     title: 'Électricité',
     description: 'Besoin d\'un jobber électricien ? Dépannage de pannes électriques, installation de prises, interrupteurs et tableaux électriques, pose de compteurs - artisans qualifiés dans chaque wilaya.',
   },
   {
-    icon: '/icons/local_laundry_service.svg',
+    icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/home-appliance.svg',
     title: 'Électroménager',
     description: 'Trouvez un jobber électroménager pour la réparation et l\'installation de réfrigérateurs, lave-linge, fours, lave-vaisselle, aspirateurs et autres appareils domestiques - service à domicile disponible à l\'échelle nationale.',
   },
   {
-    icon: '/icons/format_paint.svg',
+    icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/painting.svg',
     title: 'Peinture',
     description: 'Contactez un jobber peintre pour vos travaux de peinture intérieure et extérieure, application d\'enduits et sous-couches, réparation de fissures et préparation de surfaces - chantiers et finitions soignés partout dans le pays.',
   },
   {
-    icon: '/icons/roofing.svg',
+    icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/plaster.svg',
     title: 'Placo/Plâtre',
     description: 'Faites intervenir un jobber plaquiste ou plâtrier pour la pose de faux plafonds avec éclairage LED intégré, moulures et corniches en plâtre, cloisons et habillages décoratifs en placo - résultat esthétique et précis sur l\'ensemble du territoire',
   },
   {
-    icon: '/icons/brick.svg',
+    icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/masonry.svg',
     title: 'Maçonnerie',
     description: 'Sollicitez un jobber maçon pour la construction de murs, réparation de fissures, pose de carreaux, faïence et dallage, réalisation de chapes, travaux en béton - professionnels expérimentés disponibles rapidement.',
   },
   {
-    icon: '/icons/nature.svg',
+    icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/gardening.svg',
     title: 'Jardinage',
     description: 'Engagez un jobber jardinier pour la taille de palmiers et l\'entretien d\'espaces verts, arrosage et irrigation, aménagement de jardins traditionnels - services proposés du Nord au Sud de l\'Algérie.',
   },
   {
-    icon: '/icons/local_shipping.svg',
+    icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/transportation.svg',
     title: 'Transport',
     description: 'Réservez un jobber transporteur pour vos déménagements, le transport de meubles, la livraison d\'objets volumineux, le chargement et déchargement d\'équipements lourds - réseau actif dans les 58 wilayas.',
   },
   {
-    icon: '/icons/construction.svg',
+    icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/miscellaneous.svg',
     title: 'Autres',
     description: 'Trouvez un jobber polyvalent pour le montage de meubles et étagères, réparation de portes et poignées, installation de tringles, petits travaux, rebouchage de trous - service rapide près de chez vous.',
   }

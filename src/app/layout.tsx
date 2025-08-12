@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
+import CriticalStyles from './criticalStyles'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,17 +15,21 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://jeelwork.com'),
-  title: 'Jeelwork Algérie - Trouvez des jobbers de confiance partout en Algérie',
+  title: {
+    default: 'Jeelwork Algérie - Trouvez des jobbers de confiance partout en Algérie',
+    template: '%s | Jeelwork Algérie'
+  },
   description: 'Plateforme de mise en relation avec des jobbers qualifiés dans les 58 wilayas. Électricité, plomberie, peinture, maçonnerie et plus. Service rapide et fiable.',
-  keywords: 'artisan algérie, plombier algérie, électricien algérie, bricolage algérie, dépannage algérie, réparation maison algérie, services à domicile algérie, Jeelwork',
+  keywords: ['artisan algérie', 'plombier algérie', 'électricien algérie', 'bricolage algérie', 'dépannage algérie', 'réparation maison algérie', 'services à domicile algérie', 'Jeelwork'],
   authors: [{ name: 'Jeelwork' }],
   creator: 'Jeelwork',
   publisher: 'Jeelwork',
   icons: {
-  icon: '/favicon.ico',
-  apple: '/apple-touch-icon.png',
-},
-
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/manifest.json',
+  
   formatDetection: {
     email: false,
     address: false,
@@ -37,7 +42,7 @@ export const metadata: Metadata = {
     siteName: 'Jeelwork',
     images: [
       {
-        url: '../../public/images/landingPagePreview.jpg',
+        url: '/images/landingPagePreview.jpg',
         width: 1200,
         height: 600,
         alt: 'Jeelwork - Des jobbers pour tous vos besoins',
@@ -50,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Jeelwork Algérie',
     description: 'Trouvez des jobbers de confiance partout en Algérie',
-    images: ['../../public/images/landingPagePreview.jpg'],
+    images: ['/images/landingPagePreview.jpg'],
   },
   robots: {
     index: true,
@@ -85,6 +90,25 @@ export default function RootLayout({
   return (
     <html lang="fr" dir="ltr">
       <head>
+        {/* Meta description explicite pour SEO */}
+        <meta 
+          name="description" 
+          content="Plateforme de mise en relation avec des jobbers qualifiés dans les 58 wilayas. Électricité, plomberie, peinture, maçonnerie et plus. Service rapide et fiable."
+        />
+        
+        {/* CSS critique inline pour éliminer le render-blocking */}
+        <CriticalStyles />
+        
+        {/* Preload de l'image hero critique */}
+        <link 
+          rel="preload" 
+          href="/images/artisanat.avif" 
+          as="image" 
+          fetchPriority="high"
+        />
+        
+        {/* Preconnect pour optimiser GTM */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />        
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={inter.className}>
@@ -102,7 +126,7 @@ export default function RootLayout({
               "description": "Plateforme de mise en relation avec des jobbers qualifiés",
               "url": "https://jeelwork.com",
               "logo": "https://jeelwork.com/images/jeelWorkLogo.webp",
-              "image": "https://jeelwork.com/images/artisanat.jpg",
+              "image": "https://jeelwork.com/images/artisanat.avif",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "DZ",
@@ -145,7 +169,7 @@ export default function RootLayout({
           }}
         />
         
-        {/* Google Analytics - Remplacez GA_MEASUREMENT_ID */}
+        {/* Google Analytics - strategy="afterInteractive" pour perf */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
           strategy="afterInteractive"
