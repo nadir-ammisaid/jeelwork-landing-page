@@ -1,18 +1,18 @@
 const testimonials = [
   {
-    text: "J'avais une panne d'électricité un vendredi soir. Grâce à Jeelwork, j'ai pu contacter un électricien dispo rapidement. Travail propre, prix raisonnable.",
+    text: "Un vendredi soir, une panne d'électricité m'a surpris. Grâce à Jeelwork, j'ai pu contacter un électricien dispo rapidement. Travail propre, prix raisonnable. Je recommande !",
     author: 'Yahia BOUKERMOUCHE',
     role: 'Particulier - Ghardaïa, Ghardaïa'
   },
   {
-    text: "Je devais réparer une fuite d'eau dans ma cuisine. J'ai trouvé un plombier sérieux via Jeelwork. Il est venu le jour même, ça m'a bien arrangé.",
+    text: "Je devais réparer une fuite d'eau dans ma cuisine. J'ai trouvé un plombier sérieux grâce à Jeelwork. Il est venu le jour même, ça m'a bien arrangé. Je suis très satisfait du service.",
     author: 'Aissa KERROUCHI',
-    role: 'Propriétaire - Berriane, Ghardaïa'
+    role: 'Entrepreneur - Berriane, Ghardaïa'
   },
   {
     text: "J'avais besoin de quelqu'un pour tailler des palmiers et des arbres autour de ma maison. En quelques clics sur Jeelwork, j'ai trouvé un jardinier équipé et sérieux. Très bon service.",
     author: 'Belhadj BEN CHIKH',
-    role: 'Entrepreneur - Guerrara, Ghardaïa'
+    role: 'Particulier - Guerrara, Ghardaïa'
   }
 ]
 
