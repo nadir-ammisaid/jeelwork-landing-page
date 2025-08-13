@@ -1,12 +1,14 @@
 # 🛠️ Jeelwork Landing Page
 
-Official landing page for **Jeelwork Algeria** – a platform that connects users with skilled local jobbers and service providers across all 58 wilayas.
+Official landing page for **Jeelwork Algeria** – a platform that connects users with skilled local jobbers and service providers across all 58 wilayas (cities).
 
 Built using **Next.js 15** with the **App Router** and **TypeScript**, the project is optimized for:
 - ⚡ SEO and performance (static export, responsive images, lazy loading)
 - 📱 Mobile-first responsive design
 - ♿ Accessibility best practices
+<!--
 - 🌍 Multi-language readiness
+-->
 
 > This project serves as the front-facing gateway for the Jeelwork ecosystem.
 
@@ -59,65 +61,17 @@ This project uses **Next.js App Router** with the following structure:
 
 ```
 JEELWORK-LANDING-PAGE
-├── .next/
-├── node_modules/
+├── .next/                          
+├── node_modules/                   
 ├── public/
-│   ├── images/
-│   │   └── NextImages/
-│   ├── manifest.json
-│   ├── robots.txt
-│   └── sitemap.xml
-├── src/
-│   ├── app/
-│   │   ├── privacy-policy/
-│   │   │   ├── page.tsx
-│   │   │   └── privacy-policy.css
-│   │   ├── terms-of-use/
-│   │   │   └── page.tsx
-│   │   ├── favicon.ico
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   ├── page.module.css
-│   │   └── page.tsx
-│   └── components/
-│       ├── CTASection.tsx
-│       ├── DownloadSection.tsx
-│       ├── Footer.tsx
-│       ├── Header.tsx
-│       ├── HeroSection.tsx
-│       ├── HowItWorksSection.tsx
-│       ├── ServicesSection.tsx
-│       └── TestimonialsSection.tsx
-├── .gitignore
-├── next-env.d.ts
-├── next.config.ts
-├── package-lock.json
-├── package.json
-├── README.md
-└── tsconfig.json
-```
-
-
-```
-JEELWORK-LANDING-PAGE
-├── .next/                          # Build cache (généré)
-├── node_modules/                   # Dépendances (généré)
-├── public/
-│   ├── icons/                      # Favicons/icônes (optionnel)
-│   ├── images/                     # Assets images publics
-│   │   ├── artisanat.avif
-│   │   ├── landingPagePreview.avif
-│   │   ├── jeelWorkLogo.webp
-│   │   ├── jobbersIllustrationWithLogo.png
-│   │   ├── google-play-playstore-logo2.svg
-│   │   ├── internet-web-browser-icon.svg
-│   │   └── palestine-flag-circular-17840.svg
+│   ├── icons/                      
+│   ├── images/                     
 │   ├── manifest.json               # PWA manifest
-│   ├── robots.txt                  # SEO robots
+│   ├── robots.txt                  # SEO robots file
 │   └── sitemap.xml                 # SEO sitemap
 ├── src/
 │   ├── app/
-│   │   ├── (legal)/                # Groupe de routes "légal"
+│   │   ├── (legal)/                
 │   │   │   ├── privacy-policy/
 │   │   │   │   ├── page.tsx
 │   │   │   │   └── privacy-policy.css
@@ -125,15 +79,15 @@ JEELWORK-LANDING-PAGE
 │   │   │       ├── page.tsx
 │   │   │       └── terms-of-use.css
 │   │   ├── apple-icon.png          # Apple touch icon
-│   │   ├── criticalStyles.css.ts   # CSS critique (string)
-│   │   ├── criticalStyles.tsx      # Composant <CriticalStyles/>
+│   │   ├── criticalStyles.css.ts   # Critical CSS (string)
+│   │   ├── criticalStyles.tsx      # <CriticalStyles/> component
 │   │   ├── favicon.ico
-│   │   ├── globals.css             # Styles globaux
-│   │   ├── icon.png                # PWA base icon (512x512 recommandé)
-│   │   ├── layout.tsx              # Root layout (métadonnées, <head/>)
-│   │   ├── page.module.css         # (si utilisé par page.tsx)
-│   │   └── page.tsx                # Page d’accueil (landing)
-│   └── components/                 # Sections de la landing
+│   │   ├── globals.css             # Global styles
+│   │   ├── icon.png                
+│   │   ├── layout.tsx              # Root layout (metadata, <head/>)
+│   │   ├── page.module.css         
+│   │   └── page.tsx                # Homepage (landing)
+│   └── components/                 # Landing page sections
 │       ├── CTASection.tsx
 │       ├── DownloadSection.tsx
 │       ├── FAQSection.tsx
@@ -163,10 +117,14 @@ JEELWORK-LANDING-PAGE
 - ✅ Static Site Generation (SSG) for fast load time
 - 🔒 SEO and security headers configured in `next.config.ts`
 - 📱 Mobile-first responsive design
+<!--
 - 🌓 Dark mode support (via prefers-color-scheme)
+-->
 - 🧑‍💻 Accessible markup (ARIA roles, keyboard navigation)
+<!--
 - 🌍 Fully translated content (French + English routes)
-- ⚡ Optimized fonts & images (`next/image`, font-display swap)
+-->
+- ⚡ Optimized fonts & images (`next/image`, `sharp`, font-display swap)
 - 🧭 Anchor navigation with smooth scrolling
 
 
