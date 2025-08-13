@@ -272,14 +272,27 @@ header {
 
 /* background image */
 .hero {
-  background: url("/images/artisanat.avif") center / cover no-repeat;
+  /* background: url("/images/artisanat.avif") center / cover no-repeat; */
   position: relative;
   color: white;
   text-align: center;
   padding: 2rem 0;
-  overflow: hidden;
-  will-change: auto;
-  contain: layout style paint;
+  /* overflow: hidden; to be checked later*/  
+  /* will-change: auto; */
+  /* contain: layout style paint; */
+  min-height: 60vh; /* pour stabiliser la hauteur et éviter du reflow */
+  display: grid;
+  place-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  object-fit: cover;
 }
 
 .hero::before {
@@ -296,10 +309,10 @@ header {
   z-index: 2;
 }
 
-.hero-content p {
+/* .hero-content p {
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
                1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
+} */
 
 .hero h1 {
   font-size: 3.5rem;
@@ -756,9 +769,9 @@ header {
     order: 2; margin-left: auto; /* logo poussé à droite */
   }
 
-  .hero {
+  /* .hero {
     background: url("/images/artisanat-mobile.avif") center / cover no-repeat;
-  }
+  } */
 
   .hero h1 {
     font-size: 2rem;
@@ -1096,4 +1109,14 @@ header {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.services,
+.how-it-works,
+.cta-section,
+.testimonials,
+.faq,
+#footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px; /* réserve un espace (600–1200px) */
 }
