@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   publisher: 'Jeelwork',
   icons: {
     icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    apple: '/apple-icon.png',
   },
   manifest: '/manifest.json',
   formatDetection: {
@@ -101,15 +101,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
 
-        {/* Preload critical hero images by viewport width */}
-        <link
-          rel="preload"
-          as="image"
-          href="/images/artisanat.avif"
-          type="image/avif"
-          media="(min-width: 431px)"
-          fetchPriority="high"
-        />
 
         {/* Inline critical CSS to avoid render-blocking */}
         <CriticalStyles />

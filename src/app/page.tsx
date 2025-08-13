@@ -8,6 +8,8 @@ import CTASection from '../components/CTASection'
 import Footer from '../components/Footer'
 import FAQSection from '../components/FAQSection'
 
+export const dynamic = 'force-static';
+
 export default function Home() {
   return (
     <>

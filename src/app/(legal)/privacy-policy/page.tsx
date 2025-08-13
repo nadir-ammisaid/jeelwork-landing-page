@@ -7,6 +7,8 @@ export const metadata = {
   description: 'Politique de confidentialité et protection des données',
 };
 
+export const dynamic = 'force-static';
+
 export default function PrivacyPolicyPage() {
   return (
     <>

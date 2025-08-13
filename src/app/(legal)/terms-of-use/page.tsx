@@ -7,6 +7,8 @@ export const metadata = {
   description: "Conditions générales d'utilisation de la plateforme Jeelwork"
 };
 
+export const dynamic = 'force-static';
+
 export default function TermsOfUsePage() {
   return (
     <>

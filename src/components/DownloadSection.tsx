@@ -20,7 +20,7 @@ export default function DownloadSection() {
               aria-label="Télécharger sur Google Play Store"
             >
               <Image
-                src="/images/google-play-playstore-logo.png"
+                src="/images/google-play-playstore-logo.svg"
                 alt="Google Play Store"
                 width={24}
                 height={24}

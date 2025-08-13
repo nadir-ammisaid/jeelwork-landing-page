@@ -98,6 +98,63 @@ JEELWORK-LANDING-PAGE
 ```
 
 
+```
+JEELWORK-LANDING-PAGE
+├── .next/                          # Build cache (généré)
+├── node_modules/                   # Dépendances (généré)
+├── public/
+│   ├── icons/                      # Favicons/icônes (optionnel)
+│   ├── images/                     # Assets images publics
+│   │   ├── artisanat.avif
+│   │   ├── landingPagePreview.avif
+│   │   ├── jeelWorkLogo.webp
+│   │   ├── jobbersIllustrationWithLogo.png
+│   │   ├── google-play-playstore-logo2.svg
+│   │   ├── internet-web-browser-icon.svg
+│   │   └── palestine-flag-circular-17840.svg
+│   ├── manifest.json               # PWA manifest
+│   ├── robots.txt                  # SEO robots
+│   └── sitemap.xml                 # SEO sitemap
+├── src/
+│   ├── app/
+│   │   ├── (legal)/                # Groupe de routes "légal"
+│   │   │   ├── privacy-policy/
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── privacy-policy.css
+│   │   │   └── terms-of-use/
+│   │   │       ├── page.tsx
+│   │   │       └── terms-of-use.css
+│   │   ├── apple-icon.png          # Apple touch icon
+│   │   ├── criticalStyles.css.ts   # CSS critique (string)
+│   │   ├── criticalStyles.tsx      # Composant <CriticalStyles/>
+│   │   ├── favicon.ico
+│   │   ├── globals.css             # Styles globaux
+│   │   ├── icon.png                # PWA base icon (512x512 recommandé)
+│   │   ├── layout.tsx              # Root layout (métadonnées, <head/>)
+│   │   ├── page.module.css         # (si utilisé par page.tsx)
+│   │   └── page.tsx                # Page d’accueil (landing)
+│   └── components/                 # Sections de la landing
+│       ├── CTASection.tsx
+│       ├── DownloadSection.tsx
+│       ├── FAQSection.tsx
+│       ├── Footer.tsx
+│       ├── Header.tsx
+│       ├── HeroSection.tsx
+│       ├── HowItWorksSection.tsx
+│       ├── ServicesSection.tsx
+│       └── TestimonialsSection.tsx
+├── .gitignore
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.json
+```
+
+
+
+
 <br><br>
 
 

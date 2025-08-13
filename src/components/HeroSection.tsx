@@ -11,10 +11,10 @@ export default function HeroSection() {
           fill
           priority
           fetchPriority="high"
-          sizes="100vw"
+          sizes="(min-width: 1600px) 1600px, 100vw"
+          quality={60}
         />
       </div>
-
 
       <div className="container">
         <div className="hero-content">
