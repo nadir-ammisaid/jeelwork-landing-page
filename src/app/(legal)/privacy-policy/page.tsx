@@ -1,11 +1,13 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
 import './privacy-policy.css';
 
 export const metadata = {
   title: 'Politique de confidentialité - Jeelwork Algérie',
   description: 'Politique de confidentialité et protection des données',
 };
+
+export const dynamic = 'force-static';
 
 export default function PrivacyPolicyPage() {
   return (

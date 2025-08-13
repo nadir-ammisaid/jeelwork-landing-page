@@ -10,9 +10,10 @@ header{background:white;box-shadow:0 .125rem .625rem rgba(0,0,0,.1);position:sti
 .nav-links{display:flex;list-style:none;gap:2rem;margin:0;padding:0}
 .nav-links a{font-weight:500;color:#4b5563;text-decoration:none;transition:color .3s ease}
 .nav-links a:hover{color:#6366f1}
-.hero{background:url("/images/artisanat.avif") center/cover no-repeat;position:relative;color:white;text-align:center;padding:2rem 0;overflow:hidden;will-change:auto;contain:layout style paint}
-.hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.4);z-index:1;will-change:opacity}
-.hero-content{position:relative;text-shadow:0 2px 6px rgba(0,0,0,.7);z-index:2}
+.hero{position:relative;color:white;text-align:center;padding:2rem 0;min-height:clamp(320px,55vh,560px)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.4);z-index:1}
+.hero-content{position:relative;z-index:2;text-shadow:0 2px 6px rgba(0,0,0,.7)}
 .hero-content p{text-shadow:2px 0 0 #000,-2px 0 0 #000,0 2px 0 #000,0 -2px 0 #000,1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000}
 .hero h1{font-size:3.5rem;margin-bottom:1rem;font-weight:800;line-height:1.2}
 .hero p{font-size:1.4rem;margin-bottom:2rem}
@@ -20,6 +21,6 @@ header{background:white;box-shadow:0 .125rem .625rem rgba(0,0,0,.1);position:sti
 .btn:hover{transform:translateY(-.125rem);box-shadow:0 .5rem 1.5625rem rgba(99,102,241,.4);color:white}
 .burger{display:none;flex-direction:column;cursor:pointer;padding:.5rem;z-index:101;background:none;border:none}
 .burger-line{width:2rem;height:.2rem;background-color:#5359a7;margin:.1875rem 0;transition:.3s;border-radius:.1875rem}
-@media(max-width:430px){.hero{background:url("/images/artisanat-mobile.avif") center/cover no-repeat}.hero h1{font-size:2rem}.hero p{font-size:1.1rem}.nav-links{display:none}.burger{display:flex}.container{padding:0 .9375rem}}
+@media(max-width:430px){.hero h1{font-size:2rem}.hero p{font-size:1.1rem}.nav-links{display:none}.burger{display:flex}.container{padding:0 .9375rem}}
 @media(min-width:431px) and (max-width:1024px){.hero h1{font-size:2.5rem}.hero p{font-size:1.1rem}.nav-links{display:none}.burger{display:flex}.container{padding:0 .9375rem}}
 `

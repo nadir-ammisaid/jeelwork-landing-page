@@ -26,10 +26,9 @@ export const metadata: Metadata = {
   publisher: 'Jeelwork',
   icons: {
     icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    apple: '/apple-icon.png',
   },
   manifest: '/manifest.json',
-  
   formatDetection: {
     email: false,
     address: false,
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Jeelwork Algérie - Jobbers de confiance',
-    description: 'Trouvez rapidement un professionnel près de chez vous dans toute l\'Algérie',
+    description: "Trouvez rapidement un professionnel près de chez vous dans toute l'Algérie",
     url: 'https://jeelwork.com',
     siteName: 'Jeelwork',
     images: [
@@ -78,7 +77,7 @@ export const metadata: Metadata = {
   category: 'Services',
   classification: 'Services à domicile',
   verification: {
-    google: 'votre-code-google', // À ajouter après vérification Google sur https://search.google.com/search-console
+    google: 'votre-code-google',
   },
 }
 
@@ -90,32 +89,27 @@ export default function RootLayout({
   return (
     <html lang="fr" dir="ltr">
       <head>
-        {/* Meta description explicite pour SEO */}
-        <meta 
-          name="description" 
+        {/* SEO: meta description */}
+        <meta
+          name="description"
           content="Plateforme de mise en relation avec des jobbers qualifiés dans les 58 wilayas. Électricité, plomberie, peinture, maçonnerie et plus. Service rapide et fiable."
         />
-        
-        {/* CSS critique inline pour éliminer le render-blocking */}
+
+        {/* Resource hints to warm up connections earlier */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+
+
+        {/* Inline critical CSS to avoid render-blocking */}
         <CriticalStyles />
-        
-        {/* Preload de l'image hero critique */}
-        <link 
-          rel="preload" 
-          href="/images/artisanat.avif" 
-          as="image" 
-          fetchPriority="high"
-        />
-        
-        {/* Preconnect pour optimiser GTM */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />        
+
+        {/* PWA manifest */}
         <link rel="manifest" href="/manifest.json" />
-      </head>
-      <body className={inter.className}>
-        {children}
-        
-        {/* Schema.org structured data */}
-        <Script
+
+        {/* Structured data (JSON-LD) for SEO */}
+        <script
           id="schema-org"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -168,13 +162,16 @@ export default function RootLayout({
             })
           }}
         />
-        
-        {/* Google Analytics - strategy="afterInteractive" pour perf */}
+      </head>
+      <body className={inter.className}>
+        {children}
+
+        {/* Google Analytics loaded in the background */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

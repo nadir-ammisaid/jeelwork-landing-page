@@ -1,11 +1,13 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
 import './terms-of-use.css';
 
 export const metadata = {
   title: "Conditions d'utilisation - Jeelwork Algérie",
   description: "Conditions générales d'utilisation de la plateforme Jeelwork"
 };
+
+export const dynamic = 'force-static';
 
 export default function TermsOfUsePage() {
   return (

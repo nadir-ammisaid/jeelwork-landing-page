@@ -12,6 +12,7 @@ export default function Footer() {
           <Link href="/#fonctionnement">Comment ça marche</Link>
           <Link href="/#temoignages">Témoignages</Link>
           <Link href="/#download">Télécharger</Link>
+          <Link href="/#faq">FAQ</Link>
           <Link href="/terms-of-use">Conditions d&apos;utilisation</Link>
           <Link href="/privacy-policy">Politique de confidentialité</Link>
         </nav>
