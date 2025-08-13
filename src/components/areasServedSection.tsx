@@ -1,0 +1,66 @@
+'use client';
+import { useMemo, useState } from 'react';
+
+// const WILAYAS = [
+//   'Alger','Chlef','Laghouat','Oum El Bouaghi','Batna','Béjaïa','Biskra','Béchar','Blida','Bouira',
+//   'Tamanrasset','Tébessa','Tlemcen','Tiaret','Tizi Ouzou','Djelfa','Jijel','Sétif','Saïda','Skikda',
+//   'Sidi Bel Abbès','Annaba','Guelma','Constantine','Médéa','Mostaganem','M\'Sila','Mascara','Ouargla','Oran',
+//   'El Bayadh','Illizi','Bordj Bou Arréridj','Boumerdès','El Tarf','Tindouf','Tissemsilt','El Oued','Khenchela','Souk Ahras',
+//   'Tipaza','Mila','Aïn Defla','Naâma','Aïn Témouchent','Ghardaïa','Relizane','Timimoun','Bordj Badji Mokhtar','Ouled Djellal',
+//   'Béni Abbès','In Salah','In Guezzam','Touggourt','Djanet','El M\'Ghair','El Meniaa'
+// ];
+
+const WILAYAS = [
+  'Mila','Oran','Adrar','Sidi Bel Abbès','Bordj Bou Arréridj','Bordj Badji Mokhtar','Alger','Batna','Blida','Relizane','Mascara','Mostaganem','Skikda','Guelma','Djelfa','Touggourt','Tissemsilt','Tamanrasset','Sétif','Jijel','M\'Sila','El Meniaa','Djanet','Tizi Ouzou','Illizi','Tlemcen','Tipaza','Ghardaïa','Chlef','Biskra','Annaba','Bouira','Naâma','Constantine','Béchar','El Oued','Médéa','Souk Ahras','Khenchela','El Tarf','Béjaïa','Tiaret','Laghouat','Ouargla','Timimoun','El Bayadh','Béni Abbès','In Salah','Aïn Defla','El M\'Ghair','In Guezzam','Aïn Témouchent','Tébessa','Saïda','Ouled Djellal','Oum El Bouaghi','Boumerdès','Tindouf'
+];
+
+export default function AreasServedSection() {
+  const [q, setQ] = useState('');
+  const list = useMemo(() => {
+    const query = q.trim().toLowerCase();
+    if (!query) return WILAYAS;
+    return WILAYAS.filter(w => w.toLowerCase().includes(query));
+  }, [q]);
+
+  return (
+    <section id="zones" className="areas-served" aria-labelledby="zones-title">
+      <div className="container">
+        <h2 id="zones-title">Zones desservies dans les 58 wilayas</h2>
+        <p className="areas-intro">
+          Interventions disponibles partout en Algérie : grandes villes et zones rurales. 
+          Réservez un jobber près de chez vous.
+        </p>
+
+        {/* Petit texte sémantique pour le SEO (termes locaux) */}
+        <p className="areas-seo">
+          Services disponibles à Alger, Oran, Constantine, Annaba, Blida, Sétif, Tizi Ouzou, Béjaïa, 
+          Batna, Chlef, Ouargla, Ghardaïa et dans toutes les autres wilayas.
+        </p>
+
+        <div className="areas-search-wrap" role="search">
+          <label htmlFor="areas-search" className="sr-only">Rechercher une wilaya</label>
+          <input
+            id="areas-search"
+            type="search"
+            className="areas-search"
+            placeholder="Rechercher une wilaya (ex. Oran, Alger, Ghardaïa)…"
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            autoComplete="off"
+          />
+        </div>
+
+        <ul className="areas-grid" aria-label="Liste des wilayas desservies">
+          {list.map((w) => (
+            <li key={w}>
+              {/* Lien vers la section de téléchargement (ancre existante) */}
+              <a className="area-chip" href="#download" aria-label={`Réserver un jobber à ${w}`}>
+                {w}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
