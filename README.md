@@ -117,15 +117,15 @@ JEELWORK-LANDING-PAGE
 - ✅ Static Site Generation (SSG) for fast load time
 - 🔒 SEO and security headers configured in `next.config.ts`
 - 📱 Mobile-first responsive design
-<!--
-- 🌓 Dark mode support (via prefers-color-scheme)
--->
 - 🧑‍💻 Accessible markup (ARIA roles, keyboard navigation)
-<!--
-- 🌍 Fully translated content (French + English routes)
--->
 - ⚡ Optimized fonts & images (`next/image`, `sharp`, font-display swap)
 - 🧭 Anchor navigation with smooth scrolling
+
+
+<!--
+- 🌓 Dark mode support (via prefers-color-scheme)
+- 🌍 Fully translated content (French + English routes)
+-->
 
 
 
