@@ -72,8 +72,8 @@ export default function Header() {
           <ul className="nav-links">
             <li><a href="/#services" onClick={(e) => handleSmoothScroll(e, '#services')}>Services</a></li>
             <li><a href="/#fonctionnement" onClick={(e) => handleSmoothScroll(e, '#fonctionnement')}>Comment ça marche</a></li>
-            <li><a href="/#temoignages" onClick={(e) => handleSmoothScroll(e, '#temoignages')}>Témoignages</a></li>
             <li><a href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Télécharger</a></li>
+            <li><a href="/#temoignages" onClick={(e) => handleSmoothScroll(e, '#temoignages')}>Témoignages</a></li>
             <li><a href="/#faq" onClick={(e) => handleSmoothScroll(e, '#faq')}>FAQ</a></li>
           </ul>
 
@@ -95,8 +95,8 @@ export default function Header() {
         <ul>
           <li><a href="/#services" onClick={(e) => handleSmoothScroll(e, '#services')}>Services</a></li>
           <li><a href="/#fonctionnement" onClick={(e) => handleSmoothScroll(e, '#fonctionnement')}>Comment ça marche</a></li>
-          <li><a href="/#temoignages" onClick={(e) => handleSmoothScroll(e, '#temoignages')}>Témoignages</a></li>
           <li><a href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Télécharger</a></li>
+          <li><a href="/#temoignages" onClick={(e) => handleSmoothScroll(e, '#temoignages')}>Témoignages</a></li>
           <li><a href="/#faq" onClick={(e) => handleSmoothScroll(e, '#faq')}>FAQ</a></li>
         </ul>
       </div>
