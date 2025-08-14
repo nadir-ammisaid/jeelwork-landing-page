@@ -21,7 +21,7 @@ export default function HeroSection() {
           <h1>Des jobbers de confiance <br /> partout en Algérie</h1>
           <p>Plombier, électricien ou peintre : réservez votre jobber en quelques clics dans les 58 wilayas.</p>
           <Link href="#download" className="btn" aria-label="Essayez gratuitement l'application">
-            Essayez gratuitement
+            Trouvez un artisan
           </Link>
         </div>
       </div>

@@ -94,7 +94,7 @@ export default function ServicesSection() {
         </div>
         <div className="services-cta">
           <a href="#download" className="btn" aria-label="Découvrir l'application maintenant">
-            Découvrez maintenant
+            Réservez un service
           </a>
         </div>
       </div>

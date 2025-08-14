@@ -53,7 +53,7 @@ export default function HowItWorksSection() {
 
         <div className="how-cta">
           <Link href="#download" className="btn" aria-label="Essayer l'application maintenant">
-            Essayez maintenant
+            Commencez maintenant
           </Link>
         </div>
         
