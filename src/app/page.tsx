@@ -7,7 +7,7 @@ import TestimonialsSection from '../components/TestimonialsSection'
 import CTASection from '../components/CTASection'
 import Footer from '../components/Footer'
 import FAQSection from '../components/FAQSection'
-import AreasServedSection from '../components/AreasServedSection'
+import AreasServedSection from '..areasServedSection/components/AreasServedSection'
 
 export const dynamic = 'force-static';
 
