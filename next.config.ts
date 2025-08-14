@@ -13,11 +13,13 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
 
-    // Responsive breakpoints used by <Image>
-    deviceSizes: [640, 750, 828, 1080, 1280, 1600],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // Tailles alignées sur tes breakpoints et le cap 1200px du hero
+    deviceSizes: [360, 430, 768, 1024, 1200],
 
-    // Cache TTL for optimized images (long in production, disabled in dev)
+    // Tailles pour icônes/visuels non full-width (ajuste si besoin)
+    imageSizes: [24, 32, 48, 64, 96, 128, 256],
+
+    // Long cache en prod, désactivé en dev
     minimumCacheTTL: isProd ? 60 * 60 * 24 * 365 : 0,
   },
 
