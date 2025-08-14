@@ -250,6 +250,7 @@ header {
 .mobile-menu.active li:nth-child(2) { transition-delay: 120ms; }
 .mobile-menu.active li:nth-child(3) { transition-delay: 180ms; }
 .mobile-menu.active li:nth-child(4) { transition-delay: 240ms; }
+.mobile-menu.active li:nth-child(5) { transition-delay: 300ms; }
 
 .mobile-menu li:last-child {
   border-bottom: 0;
@@ -388,6 +389,17 @@ header {
   font-size: 0.95rem;
 }
 
+.services-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.services-cta .btn {
+  min-width: 17rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
 /* How It Works Section */
 .how-it-works {
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -437,6 +449,17 @@ header {
 .step p {
   color: #6b7280;
   font-size: 0.95rem;
+}
+
+.how-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.how-cta .btn {
+  min-width: 17rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* CTA Section */
@@ -774,7 +797,7 @@ header {
 
 .areas-search {
   width: 100%;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #5359a7;
   border-radius: 0.75rem;
   padding: 0.75rem 1rem;
   font-size: 1rem;
@@ -1177,7 +1200,6 @@ header {
 
 /* Desktop (min-width: 1024px) */
 @media (min-width: 1024px) {
-  /* How It Works - 4 cartes par ligne */
   .steps-grid {
     grid-template-columns: repeat(4, 1fr);
   }

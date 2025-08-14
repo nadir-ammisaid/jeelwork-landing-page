@@ -11,7 +11,7 @@ export default function CTASection() {
       </div>
       <div className="cta-image">
         <Image
-          src="/images/jobbersIllustrationWithLogo.png"
+          src="/images/jobbersIllustrationWithWhiteLogo.png"
           alt="Professionnels de confiance Jeelwork"
           width={600}
           height={400}
