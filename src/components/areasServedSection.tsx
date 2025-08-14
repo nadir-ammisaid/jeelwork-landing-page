@@ -1,15 +1,6 @@
 'use client';
 import { useMemo, useState } from 'react';
 
-// const WILAYAS = [
-//   'Alger','Chlef','Laghouat','Oum El Bouaghi','Batna','Béjaïa','Biskra','Béchar','Blida','Bouira',
-//   'Tamanrasset','Tébessa','Tlemcen','Tiaret','Tizi Ouzou','Djelfa','Jijel','Sétif','Saïda','Skikda',
-//   'Sidi Bel Abbès','Annaba','Guelma','Constantine','Médéa','Mostaganem','M\'Sila','Mascara','Ouargla','Oran',
-//   'El Bayadh','Illizi','Bordj Bou Arréridj','Boumerdès','El Tarf','Tindouf','Tissemsilt','El Oued','Khenchela','Souk Ahras',
-//   'Tipaza','Mila','Aïn Defla','Naâma','Aïn Témouchent','Ghardaïa','Relizane','Timimoun','Bordj Badji Mokhtar','Ouled Djellal',
-//   'Béni Abbès','In Salah','In Guezzam','Touggourt','Djanet','El M\'Ghair','El Meniaa'
-// ];
-
 const WILAYAS = [
   'Mila','Oran','Adrar','Sidi Bel Abbès','Bordj Bou Arréridj','Bordj Badji Mokhtar','Alger','Batna','Blida','Relizane','Mascara','Mostaganem','Skikda','Guelma','Djelfa','Touggourt','Tissemsilt','Tamanrasset','Sétif','Jijel','M\'Sila','El Meniaa','Djanet','Tizi Ouzou','Illizi','Tlemcen','Tipaza','Ghardaïa','Chlef','Biskra','Annaba','Bouira','Naâma','Constantine','Béchar','El Oued','Médéa','Souk Ahras','Khenchela','El Tarf','Béjaïa','Tiaret','Laghouat','Ouargla','Timimoun','El Bayadh','Béni Abbès','In Salah','Aïn Defla','El M\'Ghair','In Guezzam','Aïn Témouchent','Tébessa','Saïda','Ouled Djellal','Oum El Bouaghi','Boumerdès','Tindouf'
 ];
