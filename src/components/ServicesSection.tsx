@@ -92,6 +92,11 @@ export default function ServicesSection() {
 
           <div className="carousel-dots" aria-hidden="true" />
         </div>
+        <div className="services-cta">
+          <a href="#download" className="btn" aria-label="Découvrir l'application maintenant">
+            Découvrez maintenant
+          </a>
+        </div>
       </div>
     </section>
   )

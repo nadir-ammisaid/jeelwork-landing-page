@@ -25,16 +25,24 @@ export default function AreasServedSection() {
   return (
     <section id="zones" className="areas-served" aria-labelledby="zones-title">
       <div className="container">
-        <h2 id="zones-title">Zones desservies dans les 58 wilayas</h2>
-        <p className="areas-intro">
+        {/* <h2 id="zones-title">Zones desservies dans les 58 wilayas</h2> */}
+        <h2 id="zones-title">Disponible partout en Algérie dans les 58 wilayas</h2>
+        {/* <p className="areas-intro">
           Interventions disponibles partout en Algérie : grandes villes et zones rurales. 
           Réservez un jobber près de chez vous.
+        </p> */}
+        <p className="areas-intro">
+          Nous intervenons dans toutes les régions, des grandes villes aux zones rurales.
         </p>
 
         {/* Petit texte sémantique pour le SEO (termes locaux) */}
-        <p className="areas-seo">
+        
+        {/* <p className="areas-seo">
           Services disponibles à Alger, Oran, Constantine, Annaba, Blida, Sétif, Tizi Ouzou, Béjaïa, 
           Batna, Chlef, Ouargla, Ghardaïa et dans toutes les autres wilayas.
+        </p> */}
+        <p className="areas-seo">
+          Trouvez et réservez un jobber près de chez vous à Alger, Oran, Constantine, Annaba, Blida, Sétif, Tizi Ouzou, Béjaïa, Batna, Chlef, Ouargla, Ghardaïa… et dans toutes les autres wilayas.
         </p>
 
         <div className="areas-search-wrap" role="search">

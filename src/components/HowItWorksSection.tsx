@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const steps = [
   {
     number: 1,
@@ -47,6 +49,12 @@ export default function HowItWorksSection() {
               <p>{step.description}</p>
             </article>
           ))}
+        </div>
+
+        <div className="how-cta">
+          <Link href="#download" className="btn" aria-label="Essayer l'application maintenant">
+            Essayez maintenant
+          </Link>
         </div>
         
         {/* Carrousel pour mobile */}
