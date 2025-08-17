@@ -7,13 +7,18 @@ export type Jobber = {
   city?: string;
   rating?: number;
   avatar?: string;
+  trade: string;
+  wilaya: string;
+  city?: string;
+  rating?: number;
+  avatar?: string;
 };
 
 export async function getRecentJobbers(): Promise<Jobber[]> {
   return [
-    { id: '1', name: 'Amine B.', trade: 'Plombier',     wilaya: 'Alger',    city: 'El Biar',  rating: 4.6, avatar: '/images/avatars/nadir.jpeg' },
-    { id: '2', name: 'Imad K.',   trade: 'Électricien',  wilaya: 'Oran',     city: 'Bir El Djir', rating: 4.7, avatar: '/images/avatars/nadir.jpeg' },
-    { id: '3', name: 'Hichem M.',   trade: 'Peintre',      wilaya: 'Constantine', city: 'El Khroub', rating: 4.9, avatar: '/images/avatars/nadir.jpeg' },
-    { id: '4', name: 'Yahia D.', trade: 'Climatisation', wilaya: 'Ghardaïa',   city: 'Ghardaïa', rating: 4.7, avatar: '/images/avatars/nadir.jpeg' },
+    { id: '1', name: 'Belhadj', trade: 'Plombier',     wilaya: 'Ghardaïa',    city: 'Bounoura',  rating: 4.6, avatar: '/images/avatars/user-avatar.png' },
+    { id: '2', name: 'Fares',   trade: 'Placo-plâtre',  wilaya: 'Ghardaïa',     city: 'Ghardaïa', rating: 4.7, avatar: '/images/avatars/user-avatar.png' },
+    { id: '3', name: 'Abdallah',   trade: 'Froid & climatisation',      wilaya: 'Ghardaïa', city: 'Berriane', rating: 4.9, avatar: '/images/avatars/user-avatar.png' },
+    { id: '4', name: 'Oussama', trade: 'Électricien', wilaya: 'Ghardaïa',   city: 'Berriane', rating: 4.7, avatar: '/images/avatars/user-avatar.png' },
   ];
 }
