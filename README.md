@@ -44,7 +44,7 @@ npm install
 ```
 
 ### Development server
-To run the dev server locally:
+To run the dev server locally: 
 
 ```bash
 npm run dev
