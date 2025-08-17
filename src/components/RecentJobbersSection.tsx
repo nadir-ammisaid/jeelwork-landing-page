@@ -19,7 +19,7 @@ export default async function RecentJobbersSection() {
       <div className="container">
         <h2 className="recent-jobbers-title">Jobbers récents près de chez vous</h2>
         <p className="recent-jobbers-subtitle">
-          Des profils vérifiés qui interviennent rapidement — dans les 58 wilayas.
+          Des profils vérifiés qui interviennent rapidement.
         </p>
 
         <div className="recent-jobbers-grid">
