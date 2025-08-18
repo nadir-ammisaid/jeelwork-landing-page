@@ -358,6 +358,8 @@ header {
   flex: 1 1 17.5rem;
   min-width: 17.5rem;
   max-width: 30%;
+  color: inherit;
+  text-decoration: none;
 }
 
 .service-card::before {
@@ -1077,8 +1079,31 @@ header {
     font-size: 1.1rem;
   }
 
+  .service-card:hover h3 {
+  text-decoration: none;
+}
+
   .service-card p {
     font-size: 0.9rem;
+  }
+
+  .breadcrumb {
+  margin: 1rem 0;
+  color: #323840;
+  }
+
+  .service-header {
+    text-align: center;
+  }
+
+  .service-detail-card {
+    margin: 2rem auto 0;
+    max-width: 56rem;
+  }
+
+  .service-bullets {
+    margin-top: 1rem;
+    padding-left: 1.25rem;
   }
 
   /* Testimonials Mobile - Cache la grid */
