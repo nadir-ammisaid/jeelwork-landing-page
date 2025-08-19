@@ -2,6 +2,7 @@
 import type { Metadata, ResolvingMetadata } from 'next';
 import { notFound } from 'next/navigation';
 import { SERVICES, getServiceBySlug } from '@/data/services';
+import Link from 'next/link';
 
 type RouteParams = { slug: string };
 type Props = { params: Promise<RouteParams> }; // << Next 15 : params est un Promise
@@ -33,7 +34,7 @@ export async function generateMetadata(
 }
 
 export default async function ServiceDetailPage({ params }: Props) {
-  const { slug } = await params;                 // << await
+  const { slug } = await params;
   const service = getServiceBySlug(slug);
   if (!service) return notFound();
 
@@ -56,7 +57,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         </header>
 
         {/* Contenu principal */}
-        <article className="service-detail-card">
+        <article className="service-card service-detail-card">
           <h3>Ce que nous proposons</h3>
           <p>{service.metaDescription}</p>
 
@@ -69,13 +70,14 @@ export default async function ServiceDetailPage({ params }: Props) {
           ) : null}
 
           <div className="services-cta">
-            <a
+            <Link
               href="/#download"
+              prefetch={false}
               className="btn"
               aria-label={`Réservez ${service.h1.toLowerCase()}`}
             >
               Réservez {service.h1.toLowerCase()}
-            </a>
+            </Link>
           </div>
         </article>
       </div>
