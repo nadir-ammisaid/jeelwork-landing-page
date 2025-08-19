@@ -7,11 +7,6 @@ export type Jobber = {
   city?: string;
   rating?: number;
   avatar?: string;
-  trade: string;
-  wilaya: string;
-  city?: string;
-  rating?: number;
-  avatar?: string;
 };
 
 export async function getRecentJobbers(): Promise<Jobber[]> {

@@ -87,7 +87,7 @@ h2 {
 }
 
 /* Header */
-header {
+.site-header {
   background: white;
   box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -381,8 +381,9 @@ header {
   font-size: 1.3rem;
   /* color: #1f2937; */
   color: var(--card-text-color);
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+  /* margin-bottom: 0.5rem; */
+
+margin: 0;  font-weight: 600;
 }
 
 .service-card p {
@@ -402,6 +403,69 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
+.service-header h1 {
+  text-align: center;
+  /* margin-bottom: 0.5rem; */
+  /* margin-top: 0.5rem; */
+  margin: 0;
+  color: #1f2937;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.service-header p {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.05rem;
+  margin: 0 auto 2rem;
+  max-width: 48rem;
+}
+
+/* === Page détail service === */
+/* === Détail service : même largeur/rythme que l'en-tête === */
+.service-detail-card {
+  width: 100%;
+  max-width: 48rem;        /* comme ton paragraphe d'en-tête */
+  margin: 2rem auto 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;      /* comme l'en-tête */
+}
+
+.service-detail-card h3 {
+  font-size: 1.75rem;
+  margin: 0 0 .75rem;
+  color: var(--card-text-color);
+}
+
+.service-detail-card p {
+  font-size: 1.05rem;
+  margin: 0 auto 1rem;
+  color: var(--text-color);
+  max-width: 48rem;
+}
+
+/* Liste : alignée à gauche mais centrée visuellement */
+.service-detail-card .service-bullets {
+  display: inline-block;
+  text-align: left;
+  margin: 1rem auto 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.service-detail-card .service-bullets li { 
+  margin-bottom: .5rem;
+  line-height: 1.6; 
+}
+
+/* CTA centré */
+.service-detail-card .services-cta { 
+  justify-content: center; 
+}
+
 /* ======= Jobbers récents (ISR) ======= */
 .recent-jobbers {
   background: #ffffff;
@@ -411,6 +475,7 @@ header {
 .recent-jobbers-title {
   text-align: center;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   color: #1f2937;
   font-size: 2rem;
   font-weight: 700;
@@ -987,6 +1052,97 @@ header {
   white-space: nowrap; border: 0;
 }
 
+/* page service */
+.breadcrumb {
+  margin: 1rem 0;
+  color: #323840;
+}
+
+.service-header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.service-detail-card {
+  margin: 1rem auto 0;
+  max-width: 75rem;
+}
+
+.service-bullets {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+  text-align: left;
+}
+
+
+/* ====== Index des services (/services) ====== */
+.services-index {
+  padding: 2rem 0;
+}
+
+.services-index h1 {
+  text-align: center;
+  margin: 0; /* cohérent avec les autres titres */
+}
+
+/* Grille des cartes */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* 240px */
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+/* Carte d’un service */
+.services-list-item {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.services-list-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1rem 2.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* Lien qui enveloppe la carte */
+.services-item-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* En-tête compacte (icône + titre) */
+.services-item-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.services-item-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--card-text-color);
+}
+
+/* Accroche/teaser */
+.services-item-teaser {
+  color: #6b7280;
+  margin: 0.5rem 0 0;
+  font-size: 0.98rem;
+}
+
+.container-services-index {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0rem 1rem 2rem 1rem;
+}
+
+
 
 /* Responsive Styles */
 
@@ -1081,7 +1237,7 @@ header {
 
   .service-card:hover h3 {
   text-decoration: none;
-}
+  }
 
   .service-card p {
     font-size: 0.9rem;
@@ -1104,6 +1260,22 @@ header {
   .service-bullets {
     margin-top: 1rem;
     padding-left: 1.25rem;
+  }
+
+  /* === Page détail service === */
+  .service-detail-card {
+    margin: 1rem 0 0;      /* le container a déjà du padding horizontal */
+    max-width: 100%;
+    padding: 0;            /* garde le padding du container */
+  }
+
+  .service-detail-card h3 { font-size: 1.25rem; }
+  .service-detail-card p  { font-size: 1rem; }
+
+  /* CTA plein large sur mobile */
+  .services-cta .btn {
+    width: 100%;
+    min-width: 0;
   }
 
   /* Testimonials Mobile - Cache la grid */
@@ -1192,6 +1364,10 @@ header {
     font-size: 1rem;
   }
 
+  .services-list {
+    grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr)); /* 220px */
+  }
+
   
 }
 
@@ -1268,6 +1444,13 @@ header {
     max-width: 70vw;
     margin: 0;
     padding: 1.5rem;
+  }
+
+
+  /* === Page détail service === */
+  .service-detail-card {
+    max-width: 46rem;      /* un peu plus étroit pour le confort de lecture */
+    margin: 1.5rem auto 0;
   }
 
   /* Testimonials Tablet - Cache la grid */
