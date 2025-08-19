@@ -3,7 +3,8 @@ import type { Metadata, ResolvingMetadata } from 'next';
 import { notFound } from 'next/navigation';
 import { SERVICES, getServiceBySlug } from '@/data/services';
 
-type Props = { params: { slug: string } };
+type RouteParams = { slug: string };
+type Props = { params: Promise<RouteParams> }; // << Next 15 : params est un Promise
 
 export const dynamic = 'force-static';
 export const revalidate = 7200; // ISR (2h), optionnel
@@ -16,7 +17,8 @@ export async function generateMetadata(
   { params }: Props,
   _parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const service = getServiceBySlug(params.slug);
+  const { slug } = await params;                 // << await
+  const service = getServiceBySlug(slug);
   if (!service) return {};
   return {
     title: service.title,
@@ -30,8 +32,9 @@ export async function generateMetadata(
   };
 }
 
-export default function ServiceDetailPage({ params }: Props) {
-  const service = getServiceBySlug(params.slug);
+export default async function ServiceDetailPage({ params }: Props) {
+  const { slug } = await params;                 // << await
+  const service = getServiceBySlug(slug);
   if (!service) return notFound();
 
   return (
@@ -48,12 +51,12 @@ export default function ServiceDetailPage({ params }: Props) {
         {/* En-tête de page */}
         <header className="service-header">
           <img src={service.icon} alt={service.h1} width={48} height={48} />
-          <h1 className="recent-jobbers-title">{service.h1}</h1>
-          <p className="recent-jobbers-subtitle">{service.contentIntro}</p>
+          <h1>{service.h1}</h1>
+          <p>{service.contentIntro}</p>
         </header>
 
         {/* Contenu principal */}
-        <article className="service-card service-detail-card">
+        <article className="service-detail-card">
           <h3>Ce que nous proposons</h3>
           <p>{service.metaDescription}</p>
 
@@ -69,9 +72,9 @@ export default function ServiceDetailPage({ params }: Props) {
             <a
               href="/#download"
               className="btn"
-              aria-label={`Réserver ${service.h1.toLowerCase()}`}
+              aria-label={`Réservez ${service.h1.toLowerCase()}`}
             >
-              Réserver {service.h1.toLowerCase()}
+              Réservez {service.h1.toLowerCase()}
             </a>
           </div>
         </article>

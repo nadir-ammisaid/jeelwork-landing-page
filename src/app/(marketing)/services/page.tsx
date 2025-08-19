@@ -12,39 +12,73 @@ export const metadata: Metadata = {
 
 export default function ServicesIndexPage() {
   return (
-    <main className="container" style={{ padding: '2rem 0' }}>
-      <h1 style={{ textAlign: 'center' }}>Nos services</h1>
+    <section className="services" aria-label="Nos services">
+      <div className="container">
+        <h1 className="recent-jobbers-title">Des services fiables, partout en Algérie</h1>
+        <p className="recent-jobbers-subtitle">
+          Des professionnels qualifiés et disponibles dans toutes les wilayas.
+        </p>
 
-      <ul
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-          gap: '1.25rem',
-          listStyle: 'none',
-          padding: 0,
-          marginTop: '1.5rem',
-        }}
-      >
-        {SERVICES.map((s) => (
-          <li
-            key={s.slug}
-            style={{
-              background: 'white',
-              borderRadius: '1rem',
-              padding: '1rem',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.06)',
-            }}
-          >
-            <Link href={`/services/${s.slug}`} style={{ textDecoration: 'none', color: 'inherit' }} aria-label={`Voir le service ${s.h1}`}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '.75rem' }}>
-                <img src={s.icon} alt="" width={28} height={28} loading="lazy" />
-                <h2 style={{ margin: 0, fontSize: '1.1rem' }}>{s.h1}</h2>
-              </div>
-              <p style={{ color: '#6b7280', margin: '.5rem 0 0' }}>{s.teaser}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </main>
+        <div className="carousel-wrapper">
+          {/* Grid desktop */}
+          <div className="services-grid" role="list">
+            {SERVICES.map((service) => (
+              <Link
+                key={service.slug}
+                href={`/services/${service.slug}`}
+                className="service-card"
+                aria-label={`Voir le service ${service.h1}`}
+                title={service.h1}
+              >
+                <img
+                  src={service.icon}
+                  alt={service.h1}
+                  className="service-icon"
+                  width={32}
+                  height={32}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3>{service.h1}</h3>
+                <p>{service.teaser}</p>
+              </Link>
+            ))}
+          </div>
+
+          {/* Carrousel mobile */}
+          <div className="services-carousel" role="region" aria-label="Carrousel des services">
+            {SERVICES.map((service) => (
+              <Link
+                key={service.slug}
+                href={`/services/${service.slug}`}
+                className="service-card"
+                aria-label={`Voir le service ${service.h1}`}
+                title={service.h1}
+              >
+                <img
+                  src={service.icon}
+                  alt={service.h1}
+                  className="service-icon"
+                  width={32}
+                  height={32}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3>{service.h1}</h3>
+                <p>{service.teaser}</p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="carousel-dots" aria-hidden="true" />
+        </div>
+
+        <div className="services-cta">
+          <a href="/#download" className="btn" aria-label="Découvrir l'application maintenant">
+            Réservez un service
+          </a>
+        </div>
+      </div>
+    </section>
   );
 }
