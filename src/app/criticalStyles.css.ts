@@ -135,7 +135,7 @@ a:hover { color: #6366f1; }
 }
 .btn:hover { transform: translateY(-.125rem); box-shadow: 0 .5rem 1.5625rem rgba(99,102,241,.4); color: #fff; }
 
-/* === Services (au-dessus de la pliure sur desktop en général) === */
+/* === Services (aperçu au-dessus de la pliure sur desktop) === */
 .services { padding: 1rem 0; background: #fff; }
 
 .services-grid {
@@ -172,7 +172,12 @@ a:hover { color: #6366f1; }
 .service-card h3 { font-size: 1.3rem; color: var(--card-text-color); margin: 0; font-weight: 600; }
 .service-card p { color: var(--text-color); font-size: .95rem; }
 
-/* Header de page service (texte d'intro) */
+/* === Header de page service (intro + icône centrée) === */
+.service-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.service-header img { display: block; margin: 0 auto 0; }
 .service-header h1 {
   text-align: center;
   margin: 0;
@@ -181,7 +186,7 @@ a:hover { color: #6366f1; }
   font-weight: 700;
 }
 .service-header p {
-  text-align: center;
+  text-align: left;
   color: #6b7280;
   font-size: 1.05rem;
   margin: 0 auto 2rem;
@@ -217,7 +222,6 @@ a:hover { color: #6366f1; }
 
 /* Desktop (min-width: 1024px) */
 @media (min-width: 1024px) {
-  /* pour stabiliser la mise en page au-dessus de la pliure */
   .steps-grid { grid-template-columns: repeat(4, 1fr); }
   .cta-section {
     flex-direction: row;
