@@ -3,13 +3,11 @@ export const criticalCSS = `
   --header-h: 4.82rem;
   --bg-color: #f8f9fa;
   --text-color: #333;
-  --card-bg-color: white;
+  --card-bg-color: #fff;
   --card-text-color: #1f2937;
 }
 
 * { box-sizing: border-box; }
-
-/* Fix offset des ancres à cause du header sticky */
 section[id] { scroll-margin-top: var(--header-h); }
 
 body {
@@ -32,15 +30,15 @@ a {
   text-decoration: none;
   transition: color .3s ease;
 }
-a:hover { color: #5359a7; }
+a:hover { color: #6366f1; }
 
-/* === Header global (navbar) === */
+/* === Header / Navbar === */
 .site-header {
   background: #fff;
-  box-shadow: 0 .125rem .625rem rgba(0,0,0,.1);
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 .125rem .625rem rgba(0,0,0,.1);
 }
 
 .navbar {
@@ -51,15 +49,14 @@ a:hover { color: #5359a7; }
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #5359a7;
   display: flex;
   align-items: center;
   gap: .5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #5359a7;
   text-decoration: none;
 }
-
 .logo img {
   width: 1.9rem;
   height: 1.9rem;
@@ -75,13 +72,8 @@ a:hover { color: #5359a7; }
   margin: 0;
   padding: 0;
 }
-
-.nav-links a {
-  font-weight: 500;
-  color: #323840;
-  transition: color .3s ease;
-}
-.nav-links a:hover { color: #5359a7; }
+.nav-links a { font-weight: 500; color: #323840; transition: color .3s ease; }
+.nav-links a:hover { color: #6366f1; }
 
 /* Burger (mobile) */
 .burger {
@@ -93,7 +85,6 @@ a:hover { color: #5359a7; }
   background: none;
   border: none;
 }
-
 .burger-line {
   width: 2rem;
   height: .2rem;
@@ -103,7 +94,7 @@ a:hover { color: #5359a7; }
   border-radius: .1875rem;
 }
 
-/* Hero (au-dessus de la ligne de flottaison) */
+/* === Hero (au-dessus de la ligne de flottaison) === */
 .hero {
   position: relative;
   color: #fff;
@@ -113,23 +104,21 @@ a:hover { color: #5359a7; }
   display: grid;
   place-items: center;
 }
-
 .hero-bg { position: absolute; inset: 0; z-index: 0; }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; }
 .hero::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.4); z-index: 1; }
-
 .hero-content { position: relative; z-index: 2; text-shadow: 0 2px 6px rgba(0,0,0,.7); }
-
 .hero h1 {
   font-size: 3.5rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
   font-weight: 800;
   line-height: 1.2;
 }
-.hero p { font-size: 1.4rem; margin-bottom: 2rem; }
+.hero p { font-size: 1.4rem; margin: 0 0 2rem; }
 
 /* Bouton principal */
 .btn {
-  background: linear-gradient(135deg, #5359a7, #8b5cf6);
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: #fff;
   padding: 1rem 1rem;
   min-width: 17rem;
@@ -144,15 +133,11 @@ a:hover { color: #5359a7; }
   transition: all .3s ease;
   box-shadow: 0 .25rem 1.9375rem rgba(255,255,255,.6);
 }
-.btn:hover {
-  transform: translateY(-.125rem);
-  /* (optionnel) la teinte reste celle d'origine en shadow */
-  box-shadow: 0 .5rem 1.5625rem rgba(99,102,241,.4);
-  color: #fff;
-}
+.btn:hover { transform: translateY(-.125rem); box-shadow: 0 .5rem 1.5625rem rgba(99,102,241,.4); color: #fff; }
 
-/* Services (grille visible desktop) */
+/* === Services (au-dessus de la pliure sur desktop en général) === */
 .services { padding: 1rem 0; background: #fff; }
+
 .services-grid {
   display: flex;
   flex-wrap: wrap;
@@ -160,6 +145,7 @@ a:hover { color: #5359a7; }
   justify-content: center;
   margin-top: 3rem;
 }
+
 .service-card {
   background: var(--card-bg-color);
   padding: 2rem;
@@ -180,21 +166,13 @@ a:hover { color: #5359a7; }
   position: absolute;
   top: 0; left: 0; right: 0;
   height: .25rem;
-  background: linear-gradient(90deg, #5359a7, #8b5cf6);
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
 }
-.service-card:hover {
-  transform: translateY(-.5rem);
-  box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,.15);
-}
-.service-card h3 {
-  font-size: 1.3rem;
-  color: var(--card-text-color);
-  margin: 0;
-  font-weight: 600;
-}
+.service-card:hover { transform: translateY(-.5rem); box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,.15); }
+.service-card h3 { font-size: 1.3rem; color: var(--card-text-color); margin: 0; font-weight: 600; }
 .service-card p { color: var(--text-color); font-size: .95rem; }
 
-/* Header de page service (non sticky) */
+/* Header de page service (texte d'intro) */
 .service-header h1 {
   text-align: center;
   margin: 0;
@@ -210,25 +188,43 @@ a:hover { color: #5359a7; }
   max-width: 48rem;
 }
 
-/* Responsive */
+/* ============ Responsive ============ */
+
+/* Mobile (max-width: 430px) */
 @media (max-width: 430px) {
-  .hero h1 { font-size: 2rem; }
-  .hero p { font-size: 1.1rem; }
   .nav-links { display: none; }
   .burger { display: flex; }
   .container { padding: 0 .9375rem; }
 
-  /* Grid services cachée, carrousel visible (styles de base) */
+  .hero h1 { font-size: 2rem; }
+  .hero p  { font-size: 1.1rem; }
+
+  /* Grid services cachée (carrousel côté non-critique) */
   .services-grid { display: none; }
 }
 
-@media (min-width: 430px) and (max-width: 1024px) {
-  .hero h1 { font-size: 2.5rem; }
-  .hero p { font-size: 1.1rem; }
+/* Tablet (431px – 1024px) */
+@media (min-width: 431px) and (max-width: 1024px) {
   .nav-links { display: none; }
   .burger { display: flex; }
   .container { padding: 0 .9375rem; }
 
+  .hero h1 { font-size: 2.5rem; }
+  .hero p  { font-size: 1.1rem; }
+
   .services-grid { display: none; }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  /* pour stabiliser la mise en page au-dessus de la pliure */
+  .steps-grid { grid-template-columns: repeat(4, 1fr); }
+  .cta-section {
+    flex-direction: row;
+    text-align: left;
+    padding: 3rem 1rem;
+  }
+  .cta-content, .cta-image { flex: 1 1 45%; }
+  .cta-content h2 { text-align: left; }
 }
 `;

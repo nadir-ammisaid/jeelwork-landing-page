@@ -372,9 +372,63 @@ h2 {
   background: linear-gradient(90deg, #6366f1, #8b5cf6);
 }
 
+/* Neutralise le look "carte" sur la page détail */
+.service-card.service-detail-card {
+  flex: none;
+  width: 100%;
+  max-width: 48rem;        /* même largeur que ton header de service */
+  margin: 2rem auto 0;
+  text-align: center;      /* aligne comme l'en-tête */
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  border-radius: 1rem;
+}
+
+/* .service-card.service-detail-card::before { 
+  content: none; 
+} */
+
+.service-card.service-detail-card h3 {
+  font-size: 1.75rem;
+  margin: 0 0 .75rem;
+  color: var(--card-text-color);
+}
+
+.service-card.service-detail-card p {
+  font-size: 1.05rem;
+  margin: 0 0 1rem;
+  color: var(--text-color);
+  max-width: 48rem;
+  text-align: left;
+}
+
+.service-card.service-detail-card .service-bullets {
+  /* display: inline-block; */
+  text-align: left;
+  margin: 1rem auto 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.service-card.service-detail-card .service-bullets li { 
+  margin-bottom: .5rem; 
+  line-height: 1.6; 
+}
+
+.service-card.service-detail-card .services-cta { 
+  justify-content: center; 
+}
+
 .service-card:hover {
   transform: translateY(-0.5rem);
   box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.15);
+}
+
+.service-card.service-detail-card:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 .service-card h3 {
@@ -398,10 +452,10 @@ margin: 0;  font-weight: 600;
   margin-top: 2rem;
 }
 
-.services-cta .btn {
+/* .services-cta .btn {
   min-width: 17rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
+} */
 
 .service-header h1 {
   text-align: center;
@@ -422,48 +476,43 @@ margin: 0;  font-weight: 600;
 }
 
 /* === Page détail service === */
-/* === Détail service : même largeur/rythme que l'en-tête === */
 .service-detail-card {
+  flex: none;
   width: 100%;
-  max-width: 48rem;        /* comme ton paragraphe d'en-tête */
-  margin: 2rem auto 0;
-  background: transparent;
+  max-width: 56rem;
+  margin: 2rem auto;
+  text-align: left;
+  background: transparent;           /* ou var(--card-bg-color) si tu veux un fond */
   box-shadow: none;
   border-radius: 0;
   padding: 0;
-  text-align: center;      /* comme l'en-tête */
 }
+/* 
+.service-detail-card::before { 
+  content: none;
+} */
 
 .service-detail-card h3 {
-  font-size: 1.75rem;
-  margin: 0 0 .75rem;
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
   color: var(--card-text-color);
 }
 
 .service-detail-card p {
   font-size: 1.05rem;
-  margin: 0 auto 1rem;
+  margin: 0 0 1rem;
   color: var(--text-color);
-  max-width: 48rem;
 }
 
-/* Liste : alignée à gauche mais centrée visuellement */
 .service-detail-card .service-bullets {
-  display: inline-block;
-  text-align: left;
-  margin: 1rem auto 0;
-  padding-left: 1.25rem;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
   list-style: disc;
 }
 
-.service-detail-card .service-bullets li { 
+.service-detail-card .service-bullets li {
   margin-bottom: .5rem;
-  line-height: 1.6; 
-}
-
-/* CTA centré */
-.service-detail-card .services-cta { 
-  justify-content: center; 
+  line-height: 1.6;
 }
 
 /* ======= Jobbers récents (ISR) ======= */
@@ -1269,14 +1318,19 @@ margin: 0;  font-weight: 600;
     padding: 0;            /* garde le padding du container */
   }
 
-  .service-detail-card h3 { font-size: 1.25rem; }
-  .service-detail-card p  { font-size: 1rem; }
+  .service-detail-card h3 { 
+    font-size: 1.25rem; 
+  }
+
+  .service-detail-card p  { 
+    font-size: 1rem; 
+  }
 
   /* CTA plein large sur mobile */
-  .services-cta .btn {
+  /* .services-cta .btn {
     width: 100%;
     min-width: 0;
-  }
+  } */
 
   /* Testimonials Mobile - Cache la grid */
   .testimonials-grid {
@@ -1366,6 +1420,14 @@ margin: 0;  font-weight: 600;
 
   .services-list {
     grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr)); /* 220px */
+  }
+
+  .service-card.service-detail-card { 
+    margin: 1rem auto 0; 
+    max-width: 100%; 
+  }
+  .service-card.service-detail-card h3 { 
+    font-size: 1.4rem; 
   }
 
   
@@ -1515,6 +1577,10 @@ margin: 0;  font-weight: 600;
 
   .cta-content h2 {
     text-align: center;
+  }
+
+  .service-card.service-detail-card { 
+    max-width: 42rem; 
   }
 }
 
