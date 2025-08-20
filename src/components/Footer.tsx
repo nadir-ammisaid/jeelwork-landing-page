@@ -29,7 +29,7 @@ export default function Footer() {
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
-              viewBox="0 0 512 512"
+              viewBox="38 38 436 436"
               aria-label="Drapeau Algérie"
             >
               <title>Drapeau Algérie</title>

@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://jeelwork.com'),
+  metadataBase: new URL('https://www.jeelwork.com'),
   title: {
     default: 'Jeelwork Algérie - Trouvez des jobbers de confiance partout en Algérie',
     template: '%s | Jeelwork Algérie'
@@ -37,11 +37,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Jeelwork Algérie - Jobbers de confiance',
     description: "Trouvez rapidement un professionnel près de chez vous dans toute l'Algérie",
-    url: 'https://jeelwork.com',
+    url: 'https://www.jeelwork.com',
     siteName: 'Jeelwork',
     images: [
       {
-        url: '/images/landingPagePreview.jpg',
+        url: '/images/landingPagePreview.avif',
         width: 1200,
         height: 600,
         alt: 'Jeelwork - Des jobbers pour tous vos besoins',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Jeelwork Algérie',
     description: 'Trouvez des jobbers de confiance partout en Algérie',
-    images: ['/images/landingPagePreview.jpg'],
+    images: ['/images/landingPagePreview.avif'],
   },
   robots: {
     index: true,
@@ -68,10 +68,10 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://jeelwork.com',
+    canonical: 'https://www.jeelwork.com',
     languages: {
-      'fr-DZ': 'https://jeelwork.com',
-      'ar-DZ': 'https://jeelwork.com/ar/',
+      'fr-DZ': 'https://www.jeelwork.com',
+      'ar-DZ': 'https://www.jeelwork.com/ar/',
     },
   },
   category: 'Services',
@@ -118,9 +118,9 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "name": "Jeelwork Algérie",
               "description": "Plateforme de mise en relation avec des jobbers qualifiés",
-              "url": "https://jeelwork.com",
-              "logo": "https://jeelwork.com/images/jeelWorkLogo.webp",
-              "image": "https://jeelwork.com/images/artisanat.avif",
+              "url": "https://www.jeelwork.com",
+              "logo": "https://www.jeelwork.com/images/jeelWorkLogo.webp",
+              "image": "https://www.jeelwork.com/images/artisanat.avif",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "DZ",

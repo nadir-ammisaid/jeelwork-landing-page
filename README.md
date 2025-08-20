@@ -12,7 +12,7 @@ Built using **Next.js 15** with the **App Router** and **TypeScript**, the proje
 
 > This project serves as the front-facing gateway for the Jeelwork ecosystem.
 
-🔗 [https://jeelwork.com](https://jeelwork.com)
+🔗 [https://www.jeelwork.com](https://www.jeelwork.com)
 
 <br><br>
 
@@ -44,7 +44,7 @@ npm install
 ```
 
 ### Development server
-To run the dev server locally:
+To run the dev server locally: 
 
 ```bash
 npm run dev
@@ -52,7 +52,7 @@ npm run dev
 
 Visit http://localhost:3000 in your browser.
 
-<br><br>
+<br><br> 
 
 
 ## 🧱 Project Structure

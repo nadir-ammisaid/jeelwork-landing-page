@@ -20,7 +20,8 @@ export default function TestimonialsSection() {
   return (
     <section id="temoignages" className="testimonials" aria-label="Témoignages clients">
       <div className="container">
-        <h2>Ils nous font confiance à travers l&apos;Algérie</h2>
+        {/* <h2>Ils nous font confiance à travers l&apos;Algérie</h2> */}
+        <h2>Ils nous font confiance</h2>
         
         {/* Grid pour desktop */}
         <div className="testimonials-grid">

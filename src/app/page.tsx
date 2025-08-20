@@ -8,8 +8,11 @@ import CTASection from '../components/CTASection'
 import Footer from '../components/Footer'
 import FAQSection from '../components/FAQSection'
 import AreasServedSection from '../components/AreasServedSection'
+import RecentJobbersSection from '../components/RecentJobbersSection'
 
 export const dynamic = 'force-static';
+
+export const revalidate = 7200;
 
 export default function Home() {
   return (
@@ -18,11 +21,12 @@ export default function Home() {
       <main>
         <HeroSection />
         <ServicesSection />
+        <RecentJobbersSection />
         <HowItWorksSection />
-        <AreasServedSection />
         <DownloadSection />
         <TestimonialsSection />
         <FAQSection/>
+        <AreasServedSection />
         <CTASection />
       </main>
       <Footer />
