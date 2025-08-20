@@ -2,6 +2,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SERVICES } from '@/data/services';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Services - Jeelwork Algérie',
@@ -30,7 +31,7 @@ export default function ServicesIndexPage() {
                 aria-label={`Voir le service ${service.h1}`}
                 title={service.h1}
               >
-                <img
+                <Image
                   src={service.icon}
                   alt={service.h1}
                   className="service-icon"
@@ -55,7 +56,7 @@ export default function ServicesIndexPage() {
                 aria-label={`Voir le service ${service.h1}`}
                 title={service.h1}
               >
-                <img
+                <Image
                   src={service.icon}
                   alt={service.h1}
                   className="service-icon"
@@ -74,9 +75,9 @@ export default function ServicesIndexPage() {
         </div>
 
         <div className="services-cta">
-          <a href="/#download" className="btn" aria-label="Découvrir l'application maintenant">
+          <Link href="/#download" className="btn" aria-label="Découvrir l'application maintenant">
             Réservez un service
-          </a>
+          </Link>
         </div>
       </div>
     </section>

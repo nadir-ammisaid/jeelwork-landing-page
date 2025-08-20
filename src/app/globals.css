@@ -498,7 +498,8 @@ h2 {
 }
 .recent-jobbers-subtitle {
   text-align: center;
-  color: #6b7280;
+  /* color: #6b7280; */
+  text-shadow: 0 0 black;
   font-size: 1.05rem;
   margin: 0 auto 2rem;
   max-width: 48rem;

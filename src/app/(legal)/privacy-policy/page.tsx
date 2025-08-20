@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
           <h2 className="privacy-title">3. Utilisation des données</h2>
           <ul>
             <li>Faciliter la mise en relation entre clients et jobbers</li>
-            <li>Améliorer les services proposés et l'expérience utilisateur</li>
+            <li>Améliorer les services proposés et l’expérience utilisateur</li>
             <li>Communiquer des informations importantes liées à votre activité</li>
           </ul>
         </section>
@@ -51,16 +51,16 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="privacy-title">5. Sécurité</h2>
           <p>
-            Vos données sont stockées de manière sécurisée, avec des mesures techniques et organisationnelles strictes. Seuls les membres autorisés de l'équipe Jeelwork y ont accès.
+            Vos données sont stockées de manière sécurisée, avec des mesures techniques et organisationnelles strictes. Seuls les membres autorisés de l’équipe Jeelwork y ont accès.
           </p>
         </section>
 
         <section>
           <h2 className="privacy-title">6. Vos droits</h2>
           <ul>
-            <li>Demander l'accès, la modification ou la suppression de vos données</li>
+            <li>Demander l’accès, la modification ou la suppression de vos données</li>
             <li>Retirer votre consentement à tout moment</li>
-            <li>Exercer vos droits en nous contactant à l'adresse email officielle</li>
+            <li>Exercer vos droits en nous contactant à l’adresse email officielle</li>
           </ul>
         </section>
 

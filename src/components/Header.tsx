@@ -71,11 +71,11 @@ export default function Header() {
           </Link>
 
           <ul className="nav-links">
-            <li><a href="/#services" onClick={(e) => handleSmoothScroll(e, '#services')}>Services</a></li>
-            <li><a href="/#fonctionnement" onClick={(e) => handleSmoothScroll(e, '#fonctionnement')}>Comment ça marche</a></li>
-            <li><a href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Télécharger</a></li>
-            <li><a href="/#temoignages" onClick={(e) => handleSmoothScroll(e, '#temoignages')}>Témoignages</a></li>
-            <li><a href="/#faq" onClick={(e) => handleSmoothScroll(e, '#faq')}>FAQ</a></li>
+            <li><Link href="/#services" onClick={(e) => handleSmoothScroll(e, '#services')}>Services</Link></li>
+            <li><Link href="/#fonctionnement" onClick={(e) => handleSmoothScroll(e, '#fonctionnement')}>Comment ça marche</Link></li>
+            <li><Link href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Télécharger</Link></li>
+            <li><Link href="/#temoignages" onClick={(e) => handleSmoothScroll(e, '#temoignages')}>Témoignages</Link></li>
+            <li><Link href="/#faq" onClick={(e) => handleSmoothScroll(e, '#faq')}>FAQ</Link></li>
           </ul>
 
           <button
@@ -94,11 +94,11 @@ export default function Header() {
 
       <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`} id="mobileMenu">
         <ul>
-          <li><a href="/#services" onClick={(e) => handleSmoothScroll(e, '#services')}>Services</a></li>
-          <li><a href="/#fonctionnement" onClick={(e) => handleSmoothScroll(e, '#fonctionnement')}>Comment ça marche</a></li>
-          <li><a href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Télécharger</a></li>
-          <li><a href="/#temoignages" onClick={(e) => handleSmoothScroll(e, '#temoignages')}>Témoignages</a></li>
-          <li><a href="/#faq" onClick={(e) => handleSmoothScroll(e, '#faq')}>FAQ</a></li>
+          <li><Link href="/#services" onClick={(e) => handleSmoothScroll(e, '#services')}>Services</Link></li>
+          <li><Link href="/#fonctionnement" onClick={(e) => handleSmoothScroll(e, '#fonctionnement')}>Comment ça marche</Link></li>
+          <li><Link href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Télécharger</Link></li>
+          <li><Link href="/#temoignages" onClick={(e) => handleSmoothScroll(e, '#temoignages')}>Témoignages</Link></li>
+          <li><Link href="/#faq" onClick={(e) => handleSmoothScroll(e, '#faq')}>FAQ</Link></li>
         </ul>
       </div>
 
