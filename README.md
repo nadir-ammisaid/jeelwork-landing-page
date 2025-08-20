@@ -12,7 +12,7 @@ Built using **Next.js 15** with the **App Router** and **TypeScript**, the proje
 
 > This project serves as the front-facing gateway for the Jeelwork ecosystem.
 
-🔗 [https://jeelwork.com](https://jeelwork.com)
+🔗 [https://www.jeelwork.com](https://www.jeelwork.com)
 
 <br><br>
 
