@@ -1,8 +1,9 @@
 // src/app/(marketing)/services/[slug]/page.tsx
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { SERVICES, getServiceBySlug } from '@/data/services';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type RouteParams = { slug: string };
 type Props = { params: Promise<RouteParams> }; // << Next 15 : params est un Promise
@@ -15,8 +16,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  { params }: Props,
-  _parent: ResolvingMetadata
+  { params }: Props
 ): Promise<Metadata> {
   const { slug } = await params;                 // << await
   const service = getServiceBySlug(slug);
@@ -44,14 +44,14 @@ export default async function ServiceDetailPage({ params }: Props) {
 
         {/* Fil d'Ariane */}
         <nav aria-label="Fil d'Ariane" className="breadcrumb">
-          <a href="/services" aria-label="Retour aux services">Services</a>
+          <Link href="/services" aria-label="Retour aux services">Services</Link>
           {' '}/{' '}
           <strong>{service.h1}</strong>
         </nav>
 
         {/* En-tête de page */}
         <header className="service-header">
-          <img src={service.icon} alt={service.h1} width={48} height={48} />
+          <Image src={service.icon} alt={service.h1} width={48} height={48} />
           <h1>{service.h1}</h1>
           <p>{service.contentIntro}</p>
         </header>
