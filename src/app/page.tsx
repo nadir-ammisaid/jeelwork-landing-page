@@ -23,10 +23,10 @@ export default function Home() {
         <ServicesSection />
         <RecentJobbersSection />
         <HowItWorksSection />
-        <AreasServedSection />
         <DownloadSection />
         <TestimonialsSection />
         <FAQSection/>
+        <AreasServedSection />
         <CTASection />
       </main>
       <Footer />
