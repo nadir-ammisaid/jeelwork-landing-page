@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Debug reports & temp CSS
+chromewebdata_*.report.html
+src/app/globals*Orig.css
+src/app/globals*NewWithErrors.css
+src/app/globals copy.css
