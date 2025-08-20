@@ -18,7 +18,7 @@ Built using **Next.js 15** with the **App Router** and **TypeScript**, the proje
 
 ## 🖼️ Preview
 
-![Jeelwork Landing Preview](public/images/landingPagePreview.png)
+![Jeelwork Landing Preview](public/images/landingPagePreview.avif)
 
 <br><br>
 
