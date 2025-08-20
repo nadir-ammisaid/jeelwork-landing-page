@@ -49,12 +49,13 @@ export default function Header() {
     } else {
       // Ne bloque pas la redirection vers /
       closeMobileMenu()
-      router.push(href)
+      // router.push(href)
+      router.push(`/${href.replace(/^\/+/, '')}`) // Ex: '#services' -> '/#services'
     }
   }
 
   return (
-    <header>
+    <header className="site-header">
       <div className="container">
         <nav className="navbar" role="navigation" aria-label="Navigation principale">
           <Link href="/" className="logo" aria-label="Jeelwork - Accueil">

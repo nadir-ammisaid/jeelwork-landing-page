@@ -1,18 +1,27 @@
+// src/app/(marketing)/services/page.tsx
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SERVICES } from '@/data/services';
 
-export default function ServicesSection() {
+export const metadata: Metadata = {
+  title: 'Services - Jeelwork Algérie',
+  description:
+    "Découvrez les services Jeelwork : plomberie, électricité, climatisation, peinture, placo/plâtre, maçonnerie, jardinage, transport et petits travaux — disponibles dans les 58 wilayas.",
+  alternates: { canonical: 'https://jeelwork.com/services' },
+};
+
+export default function ServicesIndexPage() {
   return (
-    <section id="services" className="services" aria-label="Nos services">
+    <section className="services" aria-label="Nos services">
       <div className="container">
-        <h2>Des services fiables, partout en Algérie</h2>
-        <p className="services-subtitle">
+        <h1 className="recent-jobbers-title">Des services fiables, partout en Algérie</h1>
+        <p className="recent-jobbers-subtitle">
           Des professionnels qualifiés et disponibles dans toutes les wilayas.
         </p>
 
         <div className="carousel-wrapper">
           {/* Grid desktop */}
-          <div className="services-grid">
+          <div className="services-grid" role="list">
             {SERVICES.map((service) => (
               <Link
                 key={service.slug}
@@ -65,7 +74,7 @@ export default function ServicesSection() {
         </div>
 
         <div className="services-cta">
-          <a href="#download" className="btn" aria-label="Découvrir l'application maintenant">
+          <a href="/#download" className="btn" aria-label="Découvrir l'application maintenant">
             Réservez un service
           </a>
         </div>
