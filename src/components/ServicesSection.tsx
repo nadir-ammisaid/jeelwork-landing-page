@@ -12,7 +12,7 @@ export default function ServicesSection() {
 
         <div className="carousel-wrapper">
           {/* Grid desktop */}
-          <div className="services-grid" role="list">
+          <div className="services-grid">
             {SERVICES.map((service) => (
               <Link
                 key={service.slug}
