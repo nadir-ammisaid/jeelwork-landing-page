@@ -106,12 +106,27 @@ h2 {
   gap: 0.5rem;
 }
 .logo img {
-  width: 1.9rem;
-  height: 1.9rem;
+  /* width: 1.9rem; */
+  /* height: 1.9rem; */
   background: white;
   border-radius: 50%;
   box-shadow: 0 0 0 1px #fff;
 }
+
+.logo svg {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #fff;
+}
+
+.logo-footer img,
+.logo-footer svg {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
 .logo-footer {
   display: flex;
   align-items: center;
@@ -625,9 +640,8 @@ h2 {
   background: linear-gradient(135deg, #e2e8f0 20%, #6366f1 100%);
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 1rem;
-  max-width: 75rem;
-  margin: 0 auto;
+  padding: 3rem 3rem;
+  max-width: none;
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -796,6 +810,7 @@ h2 {
   background: linear-gradient(135deg, #6366f1 0%, #e2e8f0 100%);
   padding: 2rem 0;
 }
+
 .faq-title {
   text-align: center;
   margin-bottom: 2rem;
@@ -896,7 +911,7 @@ h2 {
   color: #9ca3af;
 }
 
-/* ----- Areas served (SEO local) ----- */
+/*  Areas served (SEO local)  */
 .areas-served {
   background: #ffffff;
   padding: 2rem 0;
@@ -1221,6 +1236,10 @@ h2 {
   .service-card.service-detail-card h3 {
     font-size: 1.4rem;
   }
+
+  .cta-section {
+  background: linear-gradient(135deg, #6366f1 0%, #e2e8f0 70%);
+  }
 }
 
 /* Tablet (431px – 1024px) */
@@ -1379,5 +1398,9 @@ h2 {
 
   .service-card.service-detail-card {
     max-width: 42rem;
+  }
+
+  .cta-section {
+  background: linear-gradient(135deg, #6366f1 0%, #e2e8f0 70%);
   }
 }
