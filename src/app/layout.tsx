@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: 'Jeelwork',
     images: [
       {
-        url: '/images/landingPagePreview.jpg',
+        url: '/images/landingPagePreview.avif',
         width: 1200,
         height: 600,
         alt: 'Jeelwork - Des jobbers pour tous vos besoins',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Jeelwork Algérie',
     description: 'Trouvez des jobbers de confiance partout en Algérie',
-    images: ['/images/landingPagePreview.jpg'],
+    images: ['/images/landingPagePreview.avif'],
   },
   robots: {
     index: true,
