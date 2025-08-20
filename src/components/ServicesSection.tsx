@@ -6,20 +6,13 @@ export default function ServicesSection() {
     <section id="services" className="services" aria-label="Nos services">
       <div className="container">
         <h2>Des services fiables, partout en Algérie</h2>
-        <p
-          style={{
-            textAlign: 'center',
-            color: '#6b7280',
-            fontSize: '1.1rem',
-            marginBottom: '2rem',
-          }}
-        >
+        <p className="services-subtitle">
           Des professionnels qualifiés et disponibles dans toutes les wilayas.
         </p>
 
         <div className="carousel-wrapper">
           {/* Grid desktop */}
-          <div className="services-grid" role="list">
+          <div className="services-grid">
             {SERVICES.map((service) => (
               <Link
                 key={service.slug}
