@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+// import './globals.css'
 import Script from 'next/script'
 import CriticalStyles from './criticalStyles'
 
@@ -104,6 +104,28 @@ export default function RootLayout({
 
         {/* Inline critical CSS to avoid render-blocking */}
         <CriticalStyles />
+
+        {/* CSS non-critique déféré */}
+        <link rel="preload" as="style" href="/styles/deferred.css" />
+
+        {/* On injecte le <link> après le boot JS pour éviter l’event handler dans un Server Component */}
+        <Script id="load-deferred-css" strategy="afterInteractive">
+        {`
+          (function () {
+            var l = document.createElement('link');
+            l.rel = 'stylesheet';
+            l.href = '/styles/deferred.css';
+            l.media = 'print';
+            l.onload = function () { this.media = 'all'; };
+            document.head.appendChild(l);
+          })();
+        `}
+        </Script>
+
+        <noscript>
+          <link rel="stylesheet" href="/styles/deferred.css" />
+        </noscript>
+
 
         {/* PWA manifest */}
         <link rel="manifest" href="/manifest.json" />
