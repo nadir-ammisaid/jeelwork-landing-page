@@ -20,7 +20,10 @@ Built using **Next.js 15** with the **App Router** and **TypeScript**, the proje
 
 ![Jeelwork Landing Preview](public/images/landingPagePreview.avif)
 
+
+
 <br><br>
+
 
 
 ## 🚀 Getting Started
@@ -52,7 +55,10 @@ npm run dev
 
 Visit http://localhost:3000 in your browser.
 
+
+
 <br><br> 
+
 
 
 ## 🧱 Project Structure
@@ -61,43 +67,57 @@ This project uses **Next.js App Router** with the following structure:
 
 ```
 JEELWORK-LANDING-PAGE
-├── .next/                          
-├── node_modules/                   
+├── .next/                               # Next.js build (generated)
+├── node_modules/                        # npm dependencies (generated)
 ├── public/
-│   ├── icons/                      
-│   ├── images/                     
-│   ├── manifest.json               # PWA manifest
-│   ├── robots.txt                  # SEO robots file
-│   └── sitemap.xml                 # SEO sitemap
+│   ├── icons/
+│   ├── images/
+│   ├── manifest.json                    # PWA manifest
+│   ├── robots.txt                       # SEO robots file
+│   └── sitemap.xml                      # SEO sitemap
 ├── src/
 │   ├── app/
-│   │   ├── (legal)/                
+│   │   ├── (legal)/
 │   │   │   ├── privacy-policy/
 │   │   │   │   ├── page.tsx
 │   │   │   │   └── privacy-policy.css
 │   │   │   └── terms-of-use/
 │   │   │       ├── page.tsx
 │   │   │       └── terms-of-use.css
-│   │   ├── apple-icon.png          # Apple touch icon
-│   │   ├── criticalStyles.css.ts   # Critical CSS (string)
-│   │   ├── criticalStyles.tsx      # <CriticalStyles/> component
+│   │   ├── (marketing)/
+│   │   │   └── services/
+│   │   │       ├── [slug]/             # dynamic route for a single service
+│   │   │       │   └── page.tsx        # service detail page
+│   │   │       ├── layout.tsx          # layout for the /services section
+│   │   │       └── page.tsx            # /services index (list of services)
+│   │   ├── apple-icon.png               # Apple touch icon
+│   │   ├── criticalStyles.css.ts        # Critical CSS
+│   │   ├── criticalStyles.tsx           # <CriticalStyles/> (injection inline)
 │   │   ├── favicon.ico
-│   │   ├── globals.css             # Global styles
-│   │   ├── icon.png                
-│   │   ├── layout.tsx              # Root layout (metadata, <head/>)
-│   │   ├── page.module.css         
-│   │   └── page.tsx                # Homepage (landing)
-│   └── components/                 # Landing page sections
-│       ├── CTASection.tsx
-│       ├── DownloadSection.tsx
-│       ├── FAQSection.tsx
-│       ├── Footer.tsx
-│       ├── Header.tsx
-│       ├── HeroSection.tsx
-│       ├── HowItWorksSection.tsx
-│       ├── ServicesSection.tsx
-│       └── TestimonialsSection.tsx
+│   │   ├── globals.css                  # service detail page
+│   │   ├── icon.png                     # Next.js default icon (route /icon)
+│   │   ├── layout.tsx                   # Root layout (metadata & <head/>)
+│   │   ├── page.module.css              # homepage-specific styles
+│   │   └── page.tsx                     # Homepage
+│   ├── components/                      # Homepage sections / UI blocks
+│   │   ├── AreasServedSection.tsx
+│   │   ├── CTASection.tsx
+│   │   ├── DownloadSection.tsx
+│   │   ├── FAQSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── HowItWorksSection.tsx
+│   │   ├── RecentJobbersSection.tsx
+│   │   ├── ServicesSection.tsx
+│   │   └── TestimonialsSection.tsx
+│   ├── data/
+│   │   └── services.ts                  # services catalog (content)
+│   └── lib/
+│       └── jobbers.ts                   # jobbers data (ISR / mocks)
+├── .eslintrc.json
 ├── .gitignore
+├── env.d.ts
 ├── next-env.d.ts
 ├── next.config.ts
 ├── package-lock.json
@@ -108,8 +128,8 @@ JEELWORK-LANDING-PAGE
 
 
 
-
 <br><br>
+
 
 
 ## ✨ Features
