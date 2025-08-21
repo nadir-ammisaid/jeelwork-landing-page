@@ -93,15 +93,14 @@ JEELWORK-website
 │   │   │       ├── layout.tsx          # layout for the /services section
 │   │   │       └── page.tsx            # /services index (list of services)
 │   │   ├── apple-icon.png               # Apple touch icon
-│   │   ├── criticalStyles.css.ts        # Critical CSS
-│   │   ├── criticalStyles.tsx           # <CriticalStyles/> (injection inline)
+│   │   ├── criticalStyles.css.ts        # Critical CSS (inline string)
+│   │   ├── criticalStyles.tsx           # <CriticalStyles/> (inline injection)
 │   │   ├── favicon.ico
-│   │   ├── globals.css                  # service detail page
+│   │   ├── globals.css                  # global site-wide styles
 │   │   ├── icon.png                     # Next.js default icon (route /icon)
 │   │   ├── layout.tsx                   # Root layout (metadata & <head/>)
-│   │   ├── page.module.css              # homepage-specific styles
 │   │   └── page.tsx                     # Homepage
-│   ├── components/                      # Homepage sections / UI blocks
+│   ├── components/                      # reusable UI blocks / sections
 │   │   ├── AreasServedSection.tsx
 │   │   ├── CTASection.tsx
 │   │   ├── DownloadSection.tsx
