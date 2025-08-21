@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://jeelwork.com/sitemap.xml
+Sitemap: https://www.jeelwork.com/sitemap.xml
