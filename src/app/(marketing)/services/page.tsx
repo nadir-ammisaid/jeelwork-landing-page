@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Services - Jeelwork Algérie',
   description:
     "Découvrez les services Jeelwork : plomberie, électricité, climatisation, peinture, placo/plâtre, maçonnerie, jardinage, transport et petits travaux — disponibles dans les 58 wilayas.",
-  alternates: { canonical: 'https://jeelwork.com/services' },
+  alternates: { canonical: 'https://www.jeelwork.com/services' },
 };
 
 export default function ServicesIndexPage() {
