@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Landing page -->
+  <!-- Website page -->
   <url>
-    <loc>https://jeelwork.com/</loc>
+    <loc>https://www.jeelwork.com/</loc>
     <lastmod>2025-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -19,7 +19,7 @@
 
   <!-- Privacy Policy -->
   <url>
-    <loc>https://jeelwork.com/privacy-policy</loc>
+    <loc>https://www.jeelwork.com/privacy-policy</loc>
     <lastmod>2025-08-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -27,7 +27,7 @@
 
   <!-- Terms of Use -->
   <url>
-    <loc>https://jeelwork.com/terms-of-use</loc>
+    <loc>https://www.jeelwork.com/terms-of-use</loc>
     <lastmod>2025-08-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

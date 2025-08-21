@@ -20,7 +20,7 @@ This website serves as the public-facing entry point of the Jeelwork ecosystem, 
 
 ## 🖼️ Preview
 
-![Jeelwork Landing Preview](public/images/landingPagePreview.avif)
+![Jeelwork Website Preview](public/images/websitePreview.avif)
 
 
 
@@ -43,8 +43,8 @@ Make sure you have the following installed:
 Clone the repository and install dependencies:
 
 ```bash
-git clone git@github.com:nadir-ammisaid/jeelwork-landing-page.git
-cd jeelwork-landing-page
+git clone git@github.com:nadir-ammisaid/jeelwork-website.git
+cd jeelwork-website
 npm install
 ```
 
@@ -68,7 +68,7 @@ Visit http://localhost:3000 in your browser.
 This project uses **Next.js App Router** with the following structure:
 
 ```
-JEELWORK-LANDING-PAGE
+JEELWORK-website
 ├── .next/                               # Next.js build (generated)
 ├── node_modules/                        # npm dependencies (generated)
 ├── public/
@@ -137,9 +137,9 @@ JEELWORK-LANDING-PAGE
 ## ✨ Features
 
 - ✅ Static Site Generation (SSG) for fast load time
-- 🔒 SEO and security headers configured in `next.config.ts`
+- 🔒 SEO optimization & security headers in next.config.ts `next.config.ts`
 - 📱 Mobile-first responsive design
-- 🧑‍💻 Accessible markup (ARIA roles, keyboard navigation)
+- 🧑‍💻 Accessibility support (ARIA roles, keyboard navigation)
 - ⚡ Optimized fonts & images (`next/image`, `sharp`, font-display swap)
 - 🧭 Anchor navigation with smooth scrolling
 
