@@ -4,7 +4,11 @@ import './globals.css'
 import Script from 'next/script'
 import CriticalStyles from './criticalStyles'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap', // Améliore le rendu des fonts
+  preload: true
+})
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -101,6 +105,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
 
+        {/* Préchargement des polices pour améliorer les performances */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         {/* Inline critical CSS to avoid render-blocking */}
         <CriticalStyles />
