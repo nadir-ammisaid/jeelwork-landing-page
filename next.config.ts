@@ -1,31 +1,31 @@
 /** @type {import('next').NextConfig} */
-
 // Build environment flag
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-
   reactStrictMode: true,
-
   poweredByHeader: false,
-
+  
+  // ✅ ÉTAPE 1 & 4: Optimisations JavaScript et compilation moderne
+  compiler: {
+    removeConsole: isProd, // Supprime console.log en production
+  },
+  // swcMinify est activé par défaut dans Next.js 15
+  
   // Image optimization settings
   images: {
     formats: ['image/avif', 'image/webp'],
-
     // Tailles alignées sur tes breakpoints et le cap 1200px du hero
     deviceSizes: [360, 430, 768, 1024, 1200],
-
     // Tailles pour icônes/visuels non full-width (ajuste si besoin)
     imageSizes: [24, 32, 48, 64, 96, 128, 256],
-
     // Long cache en prod, désactivé en dev
     minimumCacheTTL: isProd ? 60 * 60 * 24 * 365 : 0,
   },
-
+  
   // HTTP compression
   compress: true,
-
+  
   // Custom HTTP headers
   async headers() {
     if (isProd) {
@@ -62,7 +62,6 @@ const nextConfig = {
         },
       ];
     }
-
     // Development headers (no caching to ease asset updates)
     return [
       { source: '/images/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
