@@ -12,7 +12,7 @@ export type ServiceItem = {
 
 export const SERVICES: ServiceItem[] = [
   {
-    slug: 'plomberie',
+    slug: 'plumbing',
     title: 'Plombier en Algérie',
     h1: 'Service de plomberie',
     icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/plumbing.svg',
@@ -30,7 +30,7 @@ export const SERVICES: ServiceItem[] = [
     ],
   },
   {
-    slug: 'froid-climatisation',
+    slug: 'cooling-and-air-conditioning',
     title: 'Climatisation et Froid en Algérie',
     h1: 'Froid et climatisation',
     icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/cooling-and-air-conditioning.svg',
@@ -48,7 +48,7 @@ export const SERVICES: ServiceItem[] = [
     ],
   },
   {
-    slug: 'electricite',
+    slug: 'electrical-work',
     title: 'Électricien en Algérie',
     h1: "Service d'électricité",
     icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/electrical-work.svg',
@@ -66,7 +66,7 @@ export const SERVICES: ServiceItem[] = [
     ],
   },
   {
-    slug: 'electromenager',
+    slug: 'home-appliance',
     title: 'Réparation Électroménager en Algérie',
     h1: 'Service électroménager',
     icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/home-appliance.svg',
@@ -84,7 +84,7 @@ export const SERVICES: ServiceItem[] = [
     ],
   },
   {
-    slug: 'peinture',
+    slug: 'painting',
     title: 'Peintre en Algérie',
     h1: 'Travaux de peinture',
     icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/painting.svg',
@@ -102,7 +102,7 @@ export const SERVICES: ServiceItem[] = [
     ],
   },
   {
-    slug: 'placo-platre',
+    slug: 'plaster',
     title: 'Placo / Plâtre en Algérie',
     h1: 'Placo / Plâtre',
     icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/plaster.svg',
@@ -120,7 +120,7 @@ export const SERVICES: ServiceItem[] = [
     ],
   },
   {
-    slug: 'maconnerie',
+    slug: 'masonry',
     title: 'Maçon en Algérie',
     h1: 'Maçonnerie',
     icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/masonry.svg',
@@ -138,7 +138,7 @@ export const SERVICES: ServiceItem[] = [
     ],
   },
   {
-    slug: 'jardinage',
+    slug: 'gardening',
     title: 'Jardinier en Algérie',
     h1: 'Jardinage',
     icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/gardening.svg',
@@ -156,7 +156,7 @@ export const SERVICES: ServiceItem[] = [
     ],
   },
   {
-    slug: 'transport',
+    slug: 'transportation',
     title: 'Transport et Déménagement en Algérie',
     h1: 'Transport',
     icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/transportation.svg',
@@ -174,7 +174,7 @@ export const SERVICES: ServiceItem[] = [
     ],
   },
   {
-    slug: 'autres',
+    slug: 'miscellaneous',
     title: 'Petits Travaux en Algérie',
     h1: 'Autres services',
     icon: 'https://supabase.jeelwork.com/storage/v1/object/public/static/icons/miscellaneous.svg',

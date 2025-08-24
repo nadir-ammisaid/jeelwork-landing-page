@@ -17,9 +17,13 @@ export default async function RecentJobbersSection() {
   return (
     <section id="jobbers-recents" className="recent-jobbers" aria-label="Jobbers récents">
       <div className="container">
-        <h2 className="recent-jobbers-title">Jobbers récents près de chez vous</h2>
-        <p className="recent-jobbers-subtitle">
+        {/* <h2 className="recent-jobbers-title">Jobbers récents près de chez vous</h2> */}
+        {/* <p className="recent-jobbers-subtitle">
           Des profils vérifiés qui interviennent rapidement.
+        </p> */}
+        <h2 className="recent-jobbers-title">Jobbers qui nous ont récemment rejoints</h2>
+        <p className="recent-jobbers-subtitle">
+          Des professionnels disponibles dans votre région.
         </p>
 
         <div className="recent-jobbers-grid">
