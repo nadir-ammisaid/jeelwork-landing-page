@@ -36,7 +36,7 @@ export default function HowItWorksSection() {
             marginBottom: '2rem',
           }}
         >
-          Facile, rapide et accessible à tous
+          Facile, rapide et accessible à tous.
         </p>
         
         <div className="steps-grid">

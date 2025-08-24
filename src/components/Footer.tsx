@@ -31,9 +31,9 @@ export default function Footer() {
       <div className="container">
         <nav className="footer-links" aria-label="Navigation footer">
           <Link href="/#services" onClick={(e) => handleSmoothScroll(e, '#services')}>Services</Link>
-          <Link href="/#how-it-works" onClick={(e) => handleSmoothScroll(e, '#how-it-works')}>How it works</Link>
-          <Link href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Download</Link>
-          <Link href="/#testimonials" onClick={(e) => handleSmoothScroll(e, '#testimonials')}>Testimonials</Link>
+          <Link href="/#how-it-works" onClick={(e) => handleSmoothScroll(e, '#how-it-works')}>Comment ça marche</Link>
+          <Link href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Télécharger</Link>
+          <Link href="/#testimonials" onClick={(e) => handleSmoothScroll(e, '#testimonials')}>Témoignages</Link>
           <Link href="/#faq" onClick={(e) => handleSmoothScroll(e, '#faq')}>FAQ</Link>
           <Link href="/terms-of-use">Conditions d&apos;utilisation</Link>
           <Link href="/privacy-policy">Politique de confidentialité</Link>
