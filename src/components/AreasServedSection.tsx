@@ -2,11 +2,13 @@
 import { useMemo, useState } from 'react';
 
 const WILAYAS = [
-  'Mila','Oran','Adrar','Sidi Bel Abbès','Bordj Bou Arréridj','Bordj Badji Mokhtar','Alger','Batna','Blida','Relizane','Mascara','Mostaganem','Skikda','Guelma','Djelfa','Touggourt','Tissemsilt','Tamanrasset','Sétif','Jijel','M\'Sila','El Meniaa','Djanet','Tizi Ouzou','Illizi','Tlemcen','Tipaza','Ghardaïa','Chlef','Biskra','Annaba','Bouira','Naâma','Constantine','Béchar','El Oued','Médéa','Souk Ahras','Khenchela','El Tarf','Béjaïa','Tiaret','Laghouat','Ouargla','Timimoun','El Bayadh','Béni Abbès','In Salah','Aïn Defla','El M\'Ghair','In Guezzam','Boumerdès','Tébessa','Saïda','Ouled Djellal','Oum El Bouaghi','Aïn Témouchent','Tindouf'
+  'Mila','Oran','Adrar','Sétif','Jijel','M\'Sila','Alger','Batna','Blida','Ghardaïa','Boumerdès','Constantine','Skikda','Guelma','Djelfa','Touggourt','Tissemsilt','Tamanrasset','Sidi Bel Abbès','Bordj Bou Arréridj','Bordj Badji Mokhtar','El Meniaa','Mostaganem','Tizi Ouzou','Illizi','Tlemcen','Tipaza','Relizane','Mascara','Djanet','Annaba','Bouira','Naâma','Biskra','Béchar','El Oued','Médéa','Souk Ahras','Khenchela','El Tarf','Béjaïa','Tiaret','Laghouat','Ouargla','Timimoun','El Bayadh','Béni Abbès','In Salah','Aïn Defla','El M\'Ghair','In Guezzam','Chlef','Tébessa','Saïda','Ouled Djellal','Oum El Bouaghi','Aïn Témouchent','Tindouf'
 ];
 
 export default function AreasServedSection() {
   const [q, setQ] = useState('');
+  const [showAll, setShowAll] = useState(false);
+
   const list = useMemo(() => {
     const query = q.trim().toLowerCase();
     if (!query) return WILAYAS;
@@ -16,22 +18,10 @@ export default function AreasServedSection() {
   return (
     <section id="zones" className="areas-served" aria-labelledby="zones-title">
       <div className="container">
-        {/* <h2 id="zones-title">Zones desservies dans les 58 wilayas</h2>  */}
         <h2 id="zones-title">Disponible partout en Algérie dans les 58 wilayas</h2>
-        {/* <p className="areas-intro">
-          Interventions disponibles partout en Algérie : grandes villes et zones rurales. 
-          Réservez un jobber près de chez vous.
-        </p> */}
         <p className="areas-intro">
           Nous intervenons dans toutes les régions, des grandes villes aux zones rurales.
         </p>
-
-        {/* Petit texte sémantique pour le SEO (termes locaux) */}
-        
-        {/* <p className="areas-seo">
-          Services disponibles à Alger, Oran, Constantine, Annaba, Blida, Sétif, Tizi Ouzou, Béjaïa, 
-          Batna, Chlef, Ouargla, Ghardaïa et dans toutes les autres wilayas.
-        </p> */}
         <p className="areas-seo">
           Trouvez et réservez un jobber près de chez vous à Alger, Oran, Constantine, Annaba, Blida, Sétif, Tizi Ouzou, Béjaïa, Batna, Chlef, Ouargla, Ghardaïa… et dans toutes les autres wilayas.
         </p>
@@ -49,16 +39,33 @@ export default function AreasServedSection() {
           />
         </div>
 
-        <ul className="areas-grid" aria-label="Liste des wilayas desservies">
+        <ul className={`areas-grid ${showAll ? 'show-all' : ''}`} aria-label="Liste des wilayas desservies">
           {list.map((w) => (
             <li key={w}>
-              {/* Lien vers la section de téléchargement (ancre existante) */}
               <a className="area-chip" href="#download" aria-label={`Réserver un jobber à ${w}`}>
                 {w}
               </a>
             </li>
           ))}
         </ul>
+
+        {/* Bouton "Voir plus/moins" */}
+        <div className="areas-show-more">
+          <button 
+            className="areas-toggle-btn"
+            onClick={() => setShowAll(!showAll)}
+            aria-expanded={showAll}
+          >
+            {showAll ? 'Voir moins' : 'Voir plus'}
+          </button>
+        </div>
+
+        {/* CTA en bas de section */}
+        <div className="areas-cta">
+          <a href="#download" className="btn" aria-label="Trouvez votre jobber maintenant">
+            Trouvez votre jobber maintenant
+          </a>
+        </div>
       </div>
     </section>
   );
