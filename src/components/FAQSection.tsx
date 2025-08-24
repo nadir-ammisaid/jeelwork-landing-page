@@ -79,7 +79,7 @@ export default function FAQSection() {
 
       <div className="faq-cta">
           <Link href="#download" className="btn" aria-label="Essayer l'application maintenant">
-            Téléchargez l'application
+            Téléchargez l&apos;application
           </Link>
         </div>
 
