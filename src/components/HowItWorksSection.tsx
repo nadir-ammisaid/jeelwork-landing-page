@@ -25,7 +25,7 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <section id="fonctionnement" className="how-it-works" aria-label="Comment ça marche">
+    <section id="how-it-works" className="how-it-works" aria-label="Comment ça marche">
       <div className="container">
         <h2>Comment ça marche</h2>
         <p

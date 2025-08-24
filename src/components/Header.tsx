@@ -72,9 +72,9 @@ export default function Header() {
 
           <ul className="nav-links">
             <li><Link href="/#services" onClick={(e) => handleSmoothScroll(e, '#services')}>Services</Link></li>
-            <li><Link href="/#fonctionnement" onClick={(e) => handleSmoothScroll(e, '#fonctionnement')}>Comment ça marche</Link></li>
-            <li><Link href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Télécharger</Link></li>
-            <li><Link href="/#temoignages" onClick={(e) => handleSmoothScroll(e, '#temoignages')}>Témoignages</Link></li>
+            <li><Link href="/#how-it-works" onClick={(e) => handleSmoothScroll(e, '#how-it-works')}>How it works</Link></li>
+            <li><Link href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Download</Link></li>
+            <li><Link href="/#testimonials" onClick={(e) => handleSmoothScroll(e, '#testimonials')}>Testimonials</Link></li>
             <li><Link href="/#faq" onClick={(e) => handleSmoothScroll(e, '#faq')}>FAQ</Link></li>
           </ul>
 
@@ -95,9 +95,9 @@ export default function Header() {
       <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`} id="mobileMenu">
         <ul>
           <li><Link href="/#services" onClick={(e) => handleSmoothScroll(e, '#services')}>Services</Link></li>
-          <li><Link href="/#fonctionnement" onClick={(e) => handleSmoothScroll(e, '#fonctionnement')}>Comment ça marche</Link></li>
+          <li><Link href="/#how-it-works" onClick={(e) => handleSmoothScroll(e, '#how-it-works')}>Comment ça marche</Link></li>
           <li><Link href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Télécharger</Link></li>
-          <li><Link href="/#temoignages" onClick={(e) => handleSmoothScroll(e, '#temoignages')}>Témoignages</Link></li>
+          <li><Link href="/#testimonials" onClick={(e) => handleSmoothScroll(e, '#testimonials')}>Témoignages</Link></li>
           <li><Link href="/#faq" onClick={(e) => handleSmoothScroll(e, '#faq')}>FAQ</Link></li>
         </ul>
       </div>

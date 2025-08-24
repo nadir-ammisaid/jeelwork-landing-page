@@ -1,18 +1,40 @@
+'use client'
+
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const pathname = usePathname()
+  const router = useRouter()
+  
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (pathname === '/') {
+      e.preventDefault()
+      const target = document.querySelector(href)
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    } else {
+      // Redirection vers la page d'accueil avec ancre
+      router.push(`/${href.replace(/^\/+/, '')}`)
+    }
+  }
 
   return (
     <footer id="footer" role="contentinfo">
       <div className="container">
         <nav className="footer-links" aria-label="Navigation footer">
-          <Link href="/#services">Services</Link>
-          <Link href="/#fonctionnement">Comment ça marche</Link>
-          <Link href="/#download">Télécharger</Link>
-          <Link href="/#temoignages">Témoignages</Link>
-          <Link href="/#faq">FAQ</Link>
+          <Link href="/#services" onClick={(e) => handleSmoothScroll(e, '#services')}>Services</Link>
+          <Link href="/#how-it-works" onClick={(e) => handleSmoothScroll(e, '#how-it-works')}>How it works</Link>
+          <Link href="/#download" onClick={(e) => handleSmoothScroll(e, '#download')}>Download</Link>
+          <Link href="/#testimonials" onClick={(e) => handleSmoothScroll(e, '#testimonials')}>Testimonials</Link>
+          <Link href="/#faq" onClick={(e) => handleSmoothScroll(e, '#faq')}>FAQ</Link>
           <Link href="/terms-of-use">Conditions d&apos;utilisation</Link>
           <Link href="/privacy-policy">Politique de confidentialité</Link>
         </nav>

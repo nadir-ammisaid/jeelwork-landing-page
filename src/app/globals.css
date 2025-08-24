@@ -147,7 +147,7 @@ h2 {
 
 /* Position normale des lignes */
 .burger-line:nth-child(1) {
-  top: calc(50% - 0.7rem);
+  top: calc(50% - 0.6rem);
 }
 
 .burger-line:nth-child(2) {
@@ -155,10 +155,15 @@ h2 {
 }
 
 .burger-line:nth-child(3) {
-  top: calc(50% + 0.5rem);
+  top: calc(50% + 0.4rem);
 }
 
 /* État actif - Croix parfaitement centrée */
+
+.burger.active .burger-line {
+  height: 0.25rem;
+}
+
 .burger.active .burger-line:nth-child(1) {
   top: calc(50% - 0.1rem);
   transform: rotate(45deg);
@@ -269,7 +274,7 @@ h2 {
 
 /* Services Section */
 .services {
-  padding: 1rem 0;
+  padding: 2rem 0;
   /* background: white; */
 }
 .services-carousel {
@@ -913,6 +918,8 @@ h2 {
 }
 .areas-grid > li {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .area-chip {
@@ -920,6 +927,7 @@ h2 {
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 10.75rem;
   height: 100%;
   min-height: 2.75rem;
   text-align: center;
