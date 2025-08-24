@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Script from 'next/script';
 
 type FAQ = { q: string; a: string };
@@ -75,6 +76,12 @@ export default function FAQSection() {
           ))}
         </div>
       </div>
+
+      <div className="faq-cta">
+          <Link href="#download" className="btn" aria-label="Essayer l'application maintenant">
+            Téléchargez l'application
+          </Link>
+        </div>
 
       {/* Schema.org FAQ */}
       <Script id="faq-schema" type="application/ld+json" strategy="afterInteractive">
