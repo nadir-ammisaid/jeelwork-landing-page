@@ -112,6 +112,8 @@ export default function RootLayout({
         {/* Inline critical CSS to avoid render-blocking */}
         <CriticalStyles />
 
+        {/* Next.js gère automatiquement le chargement du globals.css */}
+
         {/* PWA manifest */}
         <link rel="manifest" href="/manifest.json" />
 
