@@ -1237,6 +1237,13 @@ h2 {
   .cta-section {
   background: linear-gradient(135deg, #6366f1 0%, #e2e8f0 70%);
   }
+
+  /* Optimisation supplémentaire pour le rendu mobile */
+  .areas-grid {
+  will-change: auto;
+  /* Évite les re-layouts coûteux */
+  contain-intrinsic-size: auto 300px;
+}
 }
 
 /* Tablet (431px – 1024px) */
@@ -1398,6 +1405,7 @@ h2 {
 @media (max-width: 876px) {
   .areas-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    contain: layout style;
   }
 
   .areas-grid:not(.show-all) li:nth-child(n+16) {
@@ -1412,6 +1420,7 @@ h2 {
 @media (min-width: 877px) and (max-width: 1024px) {
   .areas-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    contain: layout style;
   }
   
   .areas-grid:not(.show-all) li:nth-child(n+21) {

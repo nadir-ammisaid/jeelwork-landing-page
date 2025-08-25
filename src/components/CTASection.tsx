@@ -16,6 +16,10 @@ export default function CTASection() {
           width={600}
           height={400}
           loading="lazy"
+          quality={70}
+          sizes="(max-width: 430px) 100vw, (max-width: 768px) 50vw, 600px"
+          placeholder="empty"
+
         />
       </div>
     </section>

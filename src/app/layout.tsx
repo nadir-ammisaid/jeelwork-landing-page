@@ -109,6 +109,15 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
+        {/* Préchargement de l'image Hero */}
+        <link 
+          rel="preload" 
+          as="image" 
+          href="/images/artisanat.avif" 
+          type="image/avif"
+          media="(max-width: 430px)"
+        />
+
         {/* Inline critical CSS to avoid render-blocking */}
         <CriticalStyles />
 

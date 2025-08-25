@@ -30,6 +30,8 @@ export default function ServicesSection() {
                   height={32}
                   loading="lazy"
                   decoding="async"
+                  quality={75}
+                  placeholder="empty"
                 />
                 <h3>{service.h1}</h3>
                 <p>{service.teaser}</p>
@@ -55,6 +57,8 @@ export default function ServicesSection() {
                   height={32}
                   loading="lazy"
                   decoding="async"
+                  quality={50}
+                  placeholder="empty"
                 />
                 <h3>{service.h1}</h3>
                 <p>{service.teaser}</p>

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
@@ -10,7 +10,18 @@ export default function Header() {
   const pathname = usePathname()
   const router = useRouter()
 
+  // ✅ Optimisation: useCallback pour éviter les re-créations
+  const closeMobileMenu = useCallback(() => {
+    setIsMobileMenuOpen(false)
+  }, [])
+
+  const toggleMenu = useCallback(() => {
+    setIsMobileMenuOpen(prev => !prev)
+  }, [])
+
   useEffect(() => {
+    if (!isMobileMenuOpen) return
+
     const handleClickOutside = (event: MouseEvent) => {
       const burger = document.getElementById('burger')
       const mobileMenu = document.getElementById('mobileMenu')
@@ -23,19 +34,16 @@ export default function Header() {
         !burger.contains(target) &&
         !mobileMenu.contains(target)
       ) {
-        setIsMobileMenuOpen(false)
+        closeMobileMenu()
       }
     }
 
+    // ✅ Ajout du listener seulement quand le menu est ouvert
     document.addEventListener('click', handleClickOutside)
     return () => document.removeEventListener('click', handleClickOutside)
-  }, [])
+  }, [isMobileMenuOpen, closeMobileMenu])
 
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false)
-  }
-
-  const handleSmoothScroll = (
+  const handleSmoothScroll = useCallback((
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
   ) => {
@@ -47,12 +55,10 @@ export default function Header() {
       }
       closeMobileMenu()
     } else {
-      // Ne bloque pas la redirection vers /
       closeMobileMenu()
-      // router.push(href)
-      router.push(`/${href.replace(/^\/+/, '')}`) // Ex: '#services' -> '/#services'
+      router.push(`/${href.replace(/^\/+/, '')}`)
     }
-  }
+  }, [pathname, router, closeMobileMenu])
 
   return (
     <header className="site-header">
@@ -81,13 +87,13 @@ export default function Header() {
           <button
             className={`burger ${isMobileMenuOpen ? 'active' : ''}`}
             id="burger"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onClick={toggleMenu}
             aria-label="Menu mobile"
             aria-expanded={isMobileMenuOpen}
           >
-            <div className="burger-line" />
-            <div className="burger-line" />
-            <div className="burger-line" />
+            <span className="burger-line" />
+            <span className="burger-line" />
+            <span className="burger-line" />
           </button>
         </nav>
       </div>

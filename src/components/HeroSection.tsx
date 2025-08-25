@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="hero" aria-label="Section principale">
       <div className="hero-bg" aria-hidden="true">
-        <Image
+        {/* <Image
           src="/images/artisanat.avif"
           alt="deux artisans travaillant ensemble"
           fill
@@ -18,7 +18,27 @@ export default function HeroSection() {
           placeholder="blur"
           // ✅ BlurDataURL optimisé (plus petit SVG)
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0MCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMUYyOTM3Ii8+CjxyZWN0IHg9IjUiIHk9IjUiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzYzNjZGMSIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo="
-        />
+        /> */}
+
+          <Image
+            src="/images/artisanat.avif"
+            alt="deux artisans travaillant ensemble"
+            fill
+            priority
+            fetchPriority="high"
+            // ✅ Tailles plus optimisées pour mobile
+            sizes="(max-width: 430px) 100vw, (max-width: 768px) 768px, 1200px"
+            // ✅ Qualité différenciée selon l'écran
+            quality={typeof window !== 'undefined' && window.innerWidth <= 430 ? 30 : 50}
+            // ✅ Pas de placeholder blur sur mobile (évite le double chargement)
+            placeholder={typeof window !== 'undefined' && window.innerWidth > 430 ? 'blur' : 'empty'}
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0MCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMUYyOTM3Ii8+CjxyZWN0IHg9IjUiIHk9IjUiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzYzNjZGMSIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo="
+            style={{
+              objectFit: 'cover',
+              // ✅ Optimisation du rendu initial
+              willChange: 'auto'
+            }}
+          />
       </div>
 
       <div className="container">
