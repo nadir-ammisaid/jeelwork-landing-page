@@ -5,28 +5,19 @@ export default function HeroSection() {
   return (
     <section className="hero" aria-label="Section principale">
       <div className="hero-bg" aria-hidden="true">
-        {/* <Image
-          src="/images/artisanat.avif"
-          alt="deux artisans travaillant ensemble"
-          fill
-          priority
-          fetchPriority="high"
-          sizes="(min-width: 1600px) 1600px, 100vw"
-          quality={60}
-        /> */}
-
         <Image
           src="/images/artisanat.avif"
           alt="deux artisans travaillant ensemble"
           fill
           priority
           fetchPriority="high"
-          sizes="(max-width: 430px) 430px,
-                (max-width: 1024px) 1024px,
-                1200px"
-          quality={40}
+          // Optimisé spécifiquement pour mobile (plus agressif)
+          sizes="(max-width: 430px) 430px, (max-width: 768px) 768px, 1200px"
+          // Qualité réduite pour mobile (20 au lieu de 40)
+          quality={20}
           placeholder="blur"
-          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjMUYyOTM3Ii8+CjxyZWN0IHg9IjEwMCIgeT0iMTAwIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiM2MzY2RjEiIG9wYWNpdHk9IjAuMyIvPgo8L3N2Zz4K"
+          // BlurDataURL optimisé (plus petit SVG)
+          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0MCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMUYyOTM3Ii8+CjxyZWN0IHg9IjUiIHk9IjUiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzYzNjZGMSIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo="
         />
       </div>
 
