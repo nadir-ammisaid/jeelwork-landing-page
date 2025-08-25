@@ -2,7 +2,6 @@ import { default as nextDynamic } from 'next/dynamic'
 import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
 
-// ✅ ÉTAPE 3: Lazy loading compatible Next.js 15 - Sans ssr: false
 const ServicesSection = nextDynamic(() => import('../components/ServicesSection'), {
   loading: () => <div style={{ height: '400px', background: '#f8f9fa' }} />
 })
