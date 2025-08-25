@@ -6,7 +6,7 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   
-  // ✅ ÉTAPE 1 & 4: Optimisations JavaScript et compilation moderne
+  // ÉTAPE 1 & 4: Optimisations JavaScript et compilation moderne
   compiler: {
     removeConsole: isProd, // Supprime console.log en production
   },
