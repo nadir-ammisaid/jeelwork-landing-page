@@ -16,5 +16,5 @@ body{margin:0;padding:0;line-height:1.6;font-family:"Segoe UI",Tahoma,Geneva,Ver
 .hero p{font-size:1.4rem;margin:0 0 2rem}
 .btn{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:1rem;min-width:17rem;border:none;border-radius:.75rem;display:inline-block;cursor:pointer;font-size:1em;font-weight:600;text-align:center;text-decoration:none;transition:all .3s ease;box-shadow:0 .25rem 1.9375rem rgba(255,255,255,.6)}
 @media (max-width:430px){.container{padding:0 .9375rem}.hero h1{font-size:2rem}.hero p{font-size:1.1rem}}
-@media (min-width:431px) and (max-width:1024px){.container{padding:0 .9375rem}.hero h1{font-size:2.5rem}.hero p{font-size:1.1rem}}
+@media (min-width:430px) and (max-width:1024px){.container{padding:0 .9375rem}.hero h1{font-size:2.5rem}.hero p{font-size:1.1rem}}
 `;

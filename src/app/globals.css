@@ -1240,7 +1240,7 @@ h2 {
 }
 
 /* Tablet (431px – 1024px) */
-@media (min-width: 431px) and (max-width: 1024px) {
+@media (min-width: 430px) and (max-width: 1024px) {
   .navbar {
     justify-content: space-between;
   }
