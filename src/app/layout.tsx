@@ -109,6 +109,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
+        <link rel="preload" href="/_next/static/media/55c55f0601d81cf3-s.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+
         {/* Inline critical CSS to avoid render-blocking */}
         <CriticalStyles />
 
