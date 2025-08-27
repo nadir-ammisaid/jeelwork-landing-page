@@ -1,5 +1,11 @@
 # 🛠️ Jeelwork Showcase Website
 
+<br><br>
+
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 Official showcase website for **Jeelwork Algeria**, a platform that connects users with skilled local jobbers and service providers across all 58 wilayas (cities).
 
 Built using **Next.js 15** with the **App Router** and **TypeScript**, the project is optimized for:
@@ -10,11 +16,9 @@ Built using **Next.js 15** with the **App Router** and **TypeScript**, the proje
 - 🌍 Multi-language readiness
 -->
 
-This website serves as the public-facing entry point of the Jeelwork ecosystem, featuring:
+This website serves as the public-facing entry point of the Jeelwork ecosystem.
 
-
-
-🔗 [https://www.jeelwork.com](https://www.jeelwork.com)
+**🔗 Live Demo:** [https://www.jeelwork.com](https://www.jeelwork.com)
 
 <br><br>
 
@@ -43,8 +47,18 @@ Make sure you have the following installed:
 Clone the repository and install dependencies:
 
 ```bash
+# SSH (recommandé si configuré)
 git clone git@github.com:nadir-ammisaid/jeelwork-website.git
+
+# ou HTTPS (si SSH non configuré)
+git clone https://github.com/nadir-ammisaid/jeelwork-website.git
+```
+
+```bash
 cd jeelwork-website
+```
+
+```bash
 npm install
 ```
 
@@ -58,6 +72,15 @@ npm run dev
 Visit http://localhost:3000 in your browser.
 
 
+### Available Scripts
+
+```bash
+npm run dev          # Development server
+npm run build        # Production build  
+npm run start        # Start production server
+npm run lint         # Run ESLint
+npm run export       # Static export (if configured)
+```
 
 <br><br> 
 
@@ -69,38 +92,37 @@ This project uses **Next.js App Router** with the following structure:
 
 ```
 JEELWORK-website
-├── .next/                               # Next.js build (generated)
+├── .next/                               # Next.js build output (generated)
 ├── node_modules/                        # npm dependencies (generated)
-├── public/
+├── public/                              # static assets (served at root)
 │   ├── icons/
 │   ├── images/
 │   ├── manifest.json                    # PWA manifest
 │   ├── robots.txt                       # SEO robots file
 │   └── sitemap.xml                      # SEO sitemap
 ├── src/
-│   ├── app/
-│   │   ├── (legal)/
+│   ├── app/                             # App Router (Next.js 15)
+│   │   ├── (legal)/                     # Static legal pages
 │   │   │   ├── privacy-policy/
-│   │   │   │   ├── page.tsx
-│   │   │   │   └── privacy-policy.css
+│   │   │   │   ├── page.tsx             # Privacy Policy page
+│   │   │   │   └── privacy-policy.css   
 │   │   │   └── terms-of-use/
-│   │   │       ├── page.tsx
-│   │   │       └── terms-of-use.css
-│   │   ├── (marketing)/
-│   │   │   └── services/
-│   │   │       ├── [slug]/             # dynamic route for a single service
-│   │   │       │   └── page.tsx        # service detail page
-│   │   │       ├── layout.tsx          # layout for the /services section
-│   │   │       └── page.tsx            # /services index (list of services)
-│   │   ├── apple-icon.png               # Apple touch icon
-│   │   ├── criticalStyles.css.ts        # Critical CSS (inline string)
-│   │   ├── criticalStyles.tsx           # <CriticalStyles/> (inline injection)
-│   │   ├── favicon.ico
-│   │   ├── globals.css                  # global site-wide styles
-│   │   ├── icon.png                     # Next.js default icon (route /icon)
+│   │   │       ├── page.tsx             # Terms of Use page
+│   │   │       └── terms-of-use.css     
+│   │   ├── (marketing)/services/        # Marketing pages
+│   │   │   ├── [slug]/                  # Dynamic route for a single service
+│   │   │   │   └── page.tsx             # Service detail page
+│   │   │   ├── layout.tsx               
+│   │   │   └── page.tsx                 # /services index (list of services)
+│   │   ├── apple-icon.png               
+│   │   ├── criticalStyles.css.ts        # Critical CSS (inline as string)
+│   │   ├── criticalStyles.tsx           # Critical CSS injection component
+│   │   ├── favicon.ico                  
+│   │   ├── globals.css                  # global styles (non-critical CSS)
+│   │   ├── icon.png                     
 │   │   ├── layout.tsx                   # Root layout (metadata & <head/>)
 │   │   └── page.tsx                     # Homepage
-│   ├── components/                      # reusable UI blocks / sections
+│   ├── components/                      # Reusable UI sections
 │   │   ├── AreasServedSection.tsx
 │   │   ├── CTASection.tsx
 │   │   ├── DownloadSection.tsx
@@ -113,18 +135,18 @@ JEELWORK-website
 │   │   ├── ServicesSection.tsx
 │   │   └── TestimonialsSection.tsx
 │   ├── data/
-│   │   └── services.ts                  # services catalog (content)
+│   │   └── services.ts                  # Services catalog (static content)
 │   └── lib/
-│       └── jobbers.ts                   # jobbers data (ISR / mocks)
-├── .eslintrc.json
-├── .gitignore
-├── env.d.ts
-├── next-env.d.ts
-├── next.config.ts
-├── package-lock.json
-├── package.json
-├── README.md
-└── tsconfig.json
+│       └── jobbers.ts                   # Jobbers data (ISR / mocks)
+├── .eslintrc.json                       
+├── .gitignore                           
+├── env.d.ts                             
+├── next-env.d.ts                        
+├── next.config.ts                       # Next.js configuration
+├── package-lock.json                    
+├── package.json                         
+├── README.md                            # Project documentation
+└── tsconfig.json                        
 ```
 
 
@@ -147,12 +169,6 @@ JEELWORK-website
 - 🌓 Dark mode support (via prefers-color-scheme)
 - 🌍 Fully translated content (French + English routes)
 -->
-
-
-
-
-
-
 
 
 
