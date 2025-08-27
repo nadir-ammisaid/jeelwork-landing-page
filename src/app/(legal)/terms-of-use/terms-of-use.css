@@ -1,10 +1,8 @@
-/* terms-of-use.css */
-
 .terms-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  color: #1f2937; /* text-gray-800 */
+  color: #1f2937;
   font-family: 'Segoe UI', sans-serif;
 }
 

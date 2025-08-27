@@ -47,10 +47,8 @@ export default function Header() {
       }
       closeMobileMenu()
     } else {
-      // Ne bloque pas la redirection vers /
       closeMobileMenu()
-      // router.push(href)
-      router.push(`/${href.replace(/^\/+/, '')}`) // Ex: '#services' -> '/#services'
+      router.push(`/${href.replace(/^\/+/, '')}`)
     }
   }
 

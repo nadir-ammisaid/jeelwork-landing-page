@@ -1,4 +1,3 @@
-// src/app/(marketing)/services/page.tsx
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SERVICES } from '@/data/services';

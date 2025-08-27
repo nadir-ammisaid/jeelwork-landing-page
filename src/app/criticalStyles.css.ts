@@ -1,4 +1,3 @@
-// criticalStyles.css.ts
 export const criticalCSS = `
 :root{--header-h:4.82rem;--text-color:#333}
 *{box-sizing:border-box}

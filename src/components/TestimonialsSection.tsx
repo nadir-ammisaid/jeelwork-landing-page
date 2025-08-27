@@ -20,10 +20,8 @@ export default function TestimonialsSection() {
   return (
     <section id="testimonials" className="testimonials" aria-label="Témoignages clients">
       <div className="container">
-        {/* <h2>Ils nous font confiance à travers l&apos;Algérie</h2> */}
         <h2>Ils nous font confiance</h2>
         
-        {/* Grid pour desktop */}
         <div className="testimonials-grid">
           {testimonials.map((testimonial, index) => (
             <blockquote key={index} className="testimonial-card">
@@ -36,7 +34,6 @@ export default function TestimonialsSection() {
           ))}
         </div>
 
-        {/* Carrousel pour mobile */}
         <div className="testimonials-carousel" role="region" aria-label="Carrousel des témoignages">
           {testimonials.map((testimonial, index) => (
             <blockquote key={index} className="testimonial-card">

@@ -48,8 +48,6 @@ h2 {
 
 /* Header */
 .logo img {
-  /* width: 1.9rem; */
-  /* height: 1.9rem; */
   background: white;
   border-radius: 50%;
   box-shadow: 0 0 0 1px #fff;
@@ -90,34 +88,6 @@ h2 {
 .nav-links a:hover {
   color: #6366f1;
 }
-
-/* Mobile Menu Burger */
-/* .burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 0.5rem;
-  z-index: 101;
-  background: none;
-  border: none;
-}
-.burger-line {
-  width: 2rem;
-  height: 0.2rem;
-  background-color: #5359a7;
-  margin: 0.1875rem 0;
-  transition: 0.3s;
-  border-radius: 0.1875rem;
-}
-.burger.active .burger-line:nth-child(1) {
-  transform: rotate(-45deg) translate(-0.3125rem, 0.375rem);
-}
-.burger.active .burger-line:nth-child(2) {
-  opacity: 0;
-}
-.burger.active .burger-line:nth-child(3) {
-  transform: rotate(45deg) translate(-0.3125rem, -0.375rem);
-} */
 
 /* Mobile Menu Burger NEW VERSION */
 .burger {
@@ -275,13 +245,12 @@ h2 {
 /* Services Section */
 .services {
   padding: 2rem 0;
-  /* background: white; */
 }
 .services-carousel {
   display: none;
 }
 
-/* Sous-titre (ex-style inline) */
+/* Sous-titre */
 .services-subtitle {
   text-align: center;
   color: #6b7280;
@@ -442,11 +411,9 @@ h2 {
   cursor: default !important;
 }
 
-/* ======= Jobbers récents (ISR) ======= */
+/* Jobbers récents (ISR) */
 .recent-jobbers {
-  /* background: #ffffff; */
   background: linear-gradient(135deg, #6366f1 0%, #e2e8f0 100%);
-  /* background: linear-gradient(135deg, #6366f1, #8b5cf6); */
   padding: 2rem 0;
 }
 .recent-jobbers-title {
@@ -459,7 +426,6 @@ h2 {
 }
 .recent-jobbers-subtitle {
   text-align: center;
-  /* color: #6b7280; */
   text-shadow: 0 0 black;
   font-size: 1.05rem;
   margin: 0 auto 2rem;
@@ -467,7 +433,6 @@ h2 {
 }
 .recent-jobbers-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); */
   grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
   margin-top: 1rem;
@@ -543,12 +508,10 @@ h2 {
 
 /* How It Works Section */
 .how-it-works {
-  /* background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); */
   padding: 2rem 0;
 }
 .steps-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); */
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   margin-top: 3rem;
@@ -641,7 +604,6 @@ h2 {
 /* App Download Section */
 .app-download {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  /* background: linear-gradient(135deg, #6366f1 0%, #e2e8f0 100%); */
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -767,8 +729,6 @@ h2 {
 
 /* FAQ Section */
 .faq {
-  /* background: #ffffff; */
-  /* background: linear-gradient(135deg, #6366f1, #8b5cf6); */
   background: linear-gradient(135deg, #6366f1 0%, #e2e8f0 100%);
   padding: 2rem 0;
 }
@@ -782,7 +742,6 @@ h2 {
 }
 .faq-subtitle {
   text-align: center;
-  /* color: #6b7280; */
   text-shadow: 0 0 black;
   font-size: 1.1rem;
   margin: -1rem auto 2.5rem;
@@ -911,10 +870,6 @@ h2 {
 }
 .areas-grid {
   display: grid;
-  /* grid-template-columns: repeat(
-      auto-fit,
-      minmax(clamp(0px, calc((100% - (0.75rem * 2)) / 3), 12rem), 1fr)
-    ); */
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: 0.75rem;
   margin: 1rem auto 0;
@@ -960,18 +915,6 @@ h2 {
   text-align: center;
   margin: 1.5rem 0;
 }
-
-/* .areas-toggle-btn {
-  background: white;
-  color: #6366f1;
-  border: 2px solid #6366f1;
-  padding: 0.75rem 2rem;
-  border-radius: 2rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: none;
-  margin: 0 auto;
-} */
 
 .areas-toggle-btn {
   background: white;
@@ -1068,13 +1011,12 @@ h2 {
     width: 17.5rem;
   }
 
-  /* Services Mobile - Cache la grid sur mobile */
+  /* Services Mobile */
   .services-grid {
     display: none;
   }
 
-  /* Carrousel (si présent) */
-  /* Carrousel (si présent) */
+  /* Carrousel */
   .services-carousel {
     display: flex;
     overflow-x: auto;
@@ -1124,7 +1066,7 @@ h2 {
     padding-left: 1.25rem;
   }
 
-  /* Détail service sur mobile : largeur & typo */
+  /* Détail service */
   .service-detail-card {
     margin: 1rem 0 0;
     max-width: 100%;
@@ -1177,7 +1119,6 @@ h2 {
 
   /* Jobbers récents */
   .recent-jobbers-grid {
-    /* grid-template-columns: 1fr; */
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -1190,7 +1131,7 @@ h2 {
     padding: 1rem;
   }
 
-  /* How It Works - 1 carte par ligne */
+  /* How It Works */
   .steps-grid {
     display: flex;
     flex-direction: column;
@@ -1271,7 +1212,7 @@ h2 {
     display: none;
   }
 
-  /* Carrousel tablette (si présent) */
+  /* Carrousel tablette */
   .services-carousel {
     display: flex;
     overflow-x: auto;
@@ -1294,13 +1235,13 @@ h2 {
     padding: 1.5rem;
   }
 
-  /* === Page détail service === */
+  /* Page détail service */
   .service-detail-card {
     max-width: 46rem;
     margin: 1.5rem auto 0;
   }
 
-  /* === Recent jobbers section === */
+  /* Recent jobbers section */
 
   .recent-jobbers-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1365,12 +1306,12 @@ h2 {
     font-style: italic;
   }
 
-  /* How It Works - 2 cartes par ligne */
+  /* How It Works */
   .steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* CTA - inversé comme mobile pour tablette */
+  /* CTA Section */
   .cta-section {
     flex-direction: column-reverse;
     text-align: center;

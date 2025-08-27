@@ -12,7 +12,6 @@ export default function ServicesSection() {
         </p>
 
         <div className="carousel-wrapper">
-          {/* Grid desktop */}
           <div className="services-grid">
             {SERVICES.map((service) => (
               <Link
@@ -37,7 +36,6 @@ export default function ServicesSection() {
             ))}
           </div>
 
-          {/* Carrousel mobile */}
           <div className="services-carousel" role="region" aria-label="Carrousel des services">
             {SERVICES.map((service) => (
               <Link
