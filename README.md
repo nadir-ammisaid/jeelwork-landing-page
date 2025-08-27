@@ -116,6 +116,8 @@ JEELWORK-website
 │   │   │   │   └── page.tsx             # Service detail page
 │   │   │   ├── layout.tsx               
 │   │   │   └── page.tsx                 # /services index (list of services)
+│   │   ├── api/                         # API routes
+│   │   │   └── route.ts                 
 │   │   ├── apple-icon.png               
 │   │   ├── criticalStyles.css.ts        # Critical CSS (inline as string)
 │   │   ├── criticalStyles.tsx           # Critical CSS injection component
@@ -143,6 +145,7 @@ JEELWORK-website
 ├── .eslintrc.json                       
 ├── .gitignore                           
 ├── env.d.ts                             
+├── middleware.ts                        # Middleware for API requests & Googlebot handling     
 ├── next-env.d.ts                        
 ├── next.config.ts                       # Next.js configuration
 ├── package-lock.json                    
