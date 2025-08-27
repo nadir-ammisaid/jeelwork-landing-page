@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="hero" aria-label="Section principale">
       <div className="hero-bg" aria-hidden="true">
-        <Image
+        {/* <Image
           src="/images/artisanat.avif"
           alt="deux artisans travaillant ensemble"
           fill
@@ -15,7 +15,37 @@ export default function HeroSection() {
           quality={20}
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0MCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMUYyOTM3Ii8+CjxyZWN0IHg9IjUiIHk9IjUiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzYzNjZGMSIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo="
+        /> */}
+
+        {/* mobile image */}
+        <Image
+          src="/images/artisanat.avif"
+          alt="deux artisans travaillant ensemble"
+          fill
+          priority
+          fetchPriority="high"
+          sizes="430px"
+          quality={45}
+          className="hero-img-mobile"
+          placeholder="blur"
+          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0MCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMUYyOTM3Ii8+CjxyZWN0IHg9IjUiIHk9IjUiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzYzNjZGMSIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo="
         />
+        
+        {/* tablet/desktop image */}
+        <Image
+          src="/images/artisanat.avif"
+          alt="deux artisans travaillant ensemble"
+          fill
+          priority
+          fetchPriority="high"
+          sizes="(max-width: 768px) 768px, 1200px"
+          quality={75}
+          className="hero-img-tablet-desktop"
+          placeholder="blur"
+          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0MCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjMUYyOTM3Ii8+CjxyZWN0IHg9IjUiIHk9IjUiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzYzNjZGMSIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPgo="
+        />
+
+        
       </div>
 
       <div className="container">
