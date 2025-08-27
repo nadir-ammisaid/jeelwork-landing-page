@@ -4,7 +4,6 @@
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 Official showcase website for **Jeelwork Algeria**, a platform that connects users with skilled local jobbers and service providers across all 58 wilayas (cities).
 
@@ -47,10 +46,10 @@ Make sure you have the following installed:
 Clone the repository and install dependencies:
 
 ```bash
-# SSH (recommandé si configuré)
+# SSH (recommanded)
 git clone git@github.com:nadir-ammisaid/jeelwork-website.git
 
-# ou HTTPS (si SSH non configuré)
+# or HTTPS
 git clone https://github.com/nadir-ammisaid/jeelwork-website.git
 ```
 
@@ -159,7 +158,7 @@ JEELWORK-website
 
 - ✅ Static Site Generation (SSG) for fast load time
 - 🔒 SEO optimization & security headers in next.config.ts `next.config.ts`
-- 📱 Mobile-first responsive design
+- 📱 Mobile-first responsive design with tablet & desktop optimization
 - 🧑‍💻 Accessibility support (ARIA roles, keyboard navigation)
 - ⚡ Optimized fonts & images (`next/image`, `sharp`, font-display swap)
 - 🧭 Anchor navigation with smooth scrolling
@@ -171,7 +170,19 @@ JEELWORK-website
 -->
 
 
+<br><br>
 
+
+## 📬 Feedback & Support
+
+I'd love to hear from you! If you find this project useful or have suggestions for improvement:
+
+- ⭐ **Star this repository** if you like what I'm building
+- 🚩 **Report issues** or request features via GitHub Issues  
+- 💡 **Share your ideas** for new features or improvements
+- 📧 **Contact me** on [LinkedIn](https://www.linkedin.com/in/nadir-ammisaid/)
+
+Your feedback helps me make Jeelwork better for everyone!
 
 
 
