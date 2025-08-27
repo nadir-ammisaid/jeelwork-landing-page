@@ -1,13 +1,12 @@
-// src/data/services.ts
 export type ServiceItem = {
   slug: string;
-  title: string;            // <title> SEO (ex: "Plombier en Algérie")
-  h1: string;               // Titre H1 visible en page service
-  icon: string;             // URL icône
-  teaser: string;           // Court résumé (cartes / listes)
-  metaDescription: string;  // <meta name="description">
-  contentIntro: string;     // Intro visible en page service
-  bullets?: string[];       // Points clés (optionnel)
+  title: string;
+  h1: string;
+  icon: string;
+  teaser: string;
+  metaDescription: string;
+  contentIntro: string;
+  bullets?: string[];
 };
 
 export const SERVICES: ServiceItem[] = [

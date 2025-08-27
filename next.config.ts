@@ -1,25 +1,19 @@
 /** @type {import('next').NextConfig} */
-// Build environment flag
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   
-  // ÉTAPE 1 & 4: Optimisations JavaScript et compilation moderne
   compiler: {
-    removeConsole: isProd, // Supprime console.log en production
+    removeConsole: isProd,
   },
-  // swcMinify est activé par défaut dans Next.js 15
   
   // Image optimization settings
   images: {
     formats: ['image/avif', 'image/webp'],
-    // Tailles alignées sur tes breakpoints et le cap 1200px du hero
     deviceSizes: [360, 430, 768, 1024, 1200],
-    // Tailles pour icônes/visuels non full-width (ajuste si besoin)
     imageSizes: [24, 32, 48, 64, 96, 128, 256],
-    // Long cache en prod, désactivé en dev
     minimumCacheTTL: isProd ? 60 * 60 * 24 * 365 : 0,
   },
   
@@ -52,7 +46,7 @@ const nextConfig = {
             {
               key: 'Content-Security-Policy',
               value:
-                "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none';",
+                "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://www.google.com; frame-ancestors 'none';",
             },
             { key: 'X-Frame-Options', value: 'DENY' },
             { key: 'X-Content-Type-Options', value: 'nosniff' },
