@@ -185,7 +185,7 @@ I'd love to hear from you! If you find this project useful or have suggestions f
 - 💡 **Share your ideas** for new features or improvements
 - 📧 **Contact me** on [LinkedIn](https://www.linkedin.com/in/nadir-ammisaid/)
 
-Your feedback helps me make Jeelwork better for everyone!
+Thanks in advance for taking the time to share your thoughts!
 
 
 
