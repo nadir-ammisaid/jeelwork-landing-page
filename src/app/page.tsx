@@ -26,7 +26,6 @@ const RecentJobbersSection = nextDynamic(() => import('../components/RecentJobbe
   loading: () => <div style={{ height: '400px', background: '#fff' }} />
 })
 
-// Lazy loading des composants lourds (below the fold)
 const TestimonialsSection = nextDynamic(() => import('../components/TestimonialsSection'), {
   loading: () => <div style={{ height: '400px', background: '#f8f9fa' }} />
 })
@@ -46,11 +45,9 @@ export const revalidate = 7200;
 export default function Home() {
   return (
     <>
-      {/* Seuls Header et Hero chargent immédiatement (above-the-fold) */}
       <Header />
       <main>
         <HeroSection />
-        {/* Tout le reste charge en lazy (below-the-fold) */}
         <ServicesSection />
         <RecentJobbersSection />
         <HowItWorksSection />
