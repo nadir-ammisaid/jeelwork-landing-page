@@ -115,6 +115,11 @@ export default function RootLayout({
         {/* PWA manifest */}
         <link rel="manifest" href="/manifest.json" />
 
+        {/* icons */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon" />
+
         {/* Structured data (JSON-LD) for SEO */}
         <script
           id="schema-org"
