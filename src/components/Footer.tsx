@@ -20,7 +20,6 @@ export default function Footer() {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' })
       }
     } else {
-      // Redirection vers la page d'accueil avec ancre
       router.push(`/${href.replace(/^\/+/, '')}`)
     }
   }

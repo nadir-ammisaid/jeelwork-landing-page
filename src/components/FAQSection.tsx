@@ -40,7 +40,6 @@ const faqs: FAQ[] = [
   },
 ];
 
-// JSON-LD pour rich results
 const faqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -83,7 +82,6 @@ export default function FAQSection() {
           </Link>
         </div>
 
-      {/* Schema.org FAQ */}
       <Script id="faq-schema" type="application/ld+json" strategy="afterInteractive">
         {JSON.stringify(faqJsonLd)}
       </Script>
