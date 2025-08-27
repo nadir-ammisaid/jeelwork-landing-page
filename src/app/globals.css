@@ -976,7 +976,7 @@ h2 {
 .areas-toggle-btn {
   background: white;
   border: none;
-  padding-bottom: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   font-weight: 700;
   text-decoration: underline;
   cursor: pointer;
@@ -987,7 +987,7 @@ h2 {
 .areas-cta {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 
