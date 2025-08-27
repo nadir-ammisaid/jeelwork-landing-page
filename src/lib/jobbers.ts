@@ -1,4 +1,3 @@
-// src/lib/jobbers.ts
 export type Jobber = {
   id: string;
   name: string;

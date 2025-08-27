@@ -49,7 +49,6 @@ export default function AreasServedSection() {
           ))}
         </ul>
 
-        {/* Bouton "Voir plus/moins" */}
         <div className="areas-show-more">
           <button 
             className="areas-toggle-btn"
@@ -60,7 +59,6 @@ export default function AreasServedSection() {
           </button>
         </div>
 
-        {/* CTA en bas de section */}
         <div className="areas-cta">
           <a href="#download" className="btn" aria-label="Trouvez votre jobber maintenant">
             Trouvez votre jobber maintenant
