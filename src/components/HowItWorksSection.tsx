@@ -56,20 +56,6 @@ export default function HowItWorksSection() {
             Commencez maintenant
           </Link>
         </div>
-        
-        {/* Carrousel pour mobile */}
-        {/* <div className="steps-carousel">
-          {steps.map((step) => (
-            <article key={step.number} className="step">
-              <div className="step-number" aria-label={`Étape ${step.number}`}>
-                {step.number}
-              </div>
-              <h3>{step.title}</h3>
-              <p>{step.description}</p>
-            </article>
-          ))}
-        </div>
-        <div className="carousel-dots" /> */}
       </div>
     </section>
   )

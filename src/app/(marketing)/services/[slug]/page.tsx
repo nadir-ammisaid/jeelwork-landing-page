@@ -1,4 +1,3 @@
-// src/app/(marketing)/services/[slug]/page.tsx
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { SERVICES, getServiceBySlug } from '@/data/services';
@@ -6,10 +5,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 type RouteParams = { slug: string };
-type Props = { params: Promise<RouteParams> }; // << Next 15 : params est un Promise
+type Props = { params: Promise<RouteParams> };
 
 export const dynamic = 'force-static';
-export const revalidate = 7200; // ISR (2h), optionnel
+export const revalidate = 7200;
 
 export async function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -18,7 +17,7 @@ export async function generateStaticParams() {
 export async function generateMetadata(
   { params }: Props
 ): Promise<Metadata> {
-  const { slug } = await params;                 // << await
+  const { slug } = await params;
   const service = getServiceBySlug(slug);
   if (!service) return {};
   return {
